@@ -46,7 +46,7 @@
 
        .navbar-inverse .nav.pull-right a {
           font-weight: 100;
-          font-size: 1.5em;
+          font-size: 1.3em;
        }
 
        .navbar-inverse .brand:hover, 
@@ -86,8 +86,19 @@
       color: #7f7f7f;
     }
 
+     .vertical-align-top {
+      display: inline-block !important;
+      vertical-align: top !important;
+    }
+
+
+    .vertical-align-center {
+      display: inline-block !important;
+      vertical-align: middle !important;
+    }
+
     .section {
-      padding-top: 125px;
+      padding-top: 205px;
       line-height: 2;
     }
 
@@ -105,7 +116,8 @@
       line-height: 1.5;
     }
 
-    .section .cta {
+    .section .cta,
+    .slide .cta {
       margin-top: 40px;
       margin-bottom: 40px;
       text-align: center;
@@ -115,13 +127,14 @@
     #introduction {
       margin-top: 0px;
       padding-top: 200px;
-      padding-bottom: 250px;
+      padding-bottom: 200px;
       position: relative;
     }
 
     #introduction h1 {
       font-size: 3.0em;
-      line-height: 1.5;
+      line-height: 1.25;
+      margin-top: -10px;
       font-weight: normal;
       font-family: 'Arimo', sans-serif;
     }
@@ -140,8 +153,7 @@
       height: 32px;
       width: 32px;
     }
-
-    
+  
 
     #introduction #img {
      background: url(../img/chinatown.png) no-repeat center;
@@ -155,17 +167,28 @@
         right: 0;
         bottom: 0;
         z-index: -100;
-        opacity: 0.20;
+        opacity: 0.10;
     } 
 
  
     #work_overview {
         margin-top: 0px; 
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 150px;
+        padding-bottom: 95px;
         position: relative;
         z-index: 0; 
         background-color: #fff;
+    }
+
+    #work_overview h3 {
+        line-height: 2.0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #work_overview hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #mobile-warning {
@@ -188,12 +211,6 @@
         z-index: 1; 
     }
 
-    #sortey .btn,  
-    #ikea .btn {
-      background-color: #fff;
-      color: #545354;
-    }
-
     #sortey hr {
       border-top: 2px solid #fff;
       border-bottom: none;
@@ -208,33 +225,22 @@
       width: 100%;
       background: url(../img/sortey.png) no-repeat;
       background-repeat: no-repeat;
-      /*-webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;*/
       background-size: 100%;
     }
 
     #houseplans {
-      padding-bottom: 150px;
       background-color: #fbf9f9;
       position: relative;
       z-index: 2;  
     }
 
-    #sortey .btn,  
-    #ikea .btn {
-      background-color: #fff;
-      color: #545354;
-    }
-
-    #houseplans .btn {
-      background-color: #363536;
-      color: #fff;
-    }
-
     #houseplans hr {
         border-top: 2px solid #363536;
         border-bottom: none;
+    }
+
+    #houseplans .description {
+      padding-top: 0px;
     }
 
     .image-overview {
@@ -244,17 +250,18 @@
     #ikea {
         background-color: #0081c3;
         color: #fff;
-        padding-bottom: 150px;
         position: relative;
         z-index: 3;  
     }
 
-    #ikea.jumbotron {
-      border-top: 30px solid #02537c;
+    #healthyout {
+      color: #fff;
+      background-color: #6ba620;
     }
 
+
     #contact {
-      padding: 40px 0 50px 0;
+      padding: 120px 0 110px 0;
       background-color: #fff;
       border-top: 1px solid #e8e8e8;
       text-align: center;
@@ -264,15 +271,39 @@
       margin-left: 10px;
     }
 
+    .general_assembly {
+      padding-top: 50px;
+      padding-bottom: 200px;
+    }
 
     /*Media Overides*/
+
+      @media (min-width: 1200px) {
+          #introduction h1 
+          {
+              line-height: 1.6;
+          }
+      }
 
       @media (min-width: 768px) and (max-width: 979px) {
         .navbar-fixed-top .navbar-inner {
           padding-left: 20px;
           padding-right: 20px;
         }
+
+        #introduction h1 
+          {
+              font-size: 2em;
+              line-height: 1.2;
+              margin-top: 0px;
+         }
+
+         .jumbotron {
+            margin-top: 0px;
+        }
       }
+
+
 
       @media (max-width: 767px) {
 
@@ -300,14 +331,18 @@
 
       #introduction 
       {
-          padding-top: 50px;
+          padding-top: 20px;
           padding-bottom: 0px;
       }
 
       #work_overview 
       {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      .section {
+        padding-top: 50px;
       }
 
       .jumbotron {

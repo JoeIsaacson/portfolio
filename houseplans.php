@@ -6,9 +6,11 @@
     <title>UX Designer For Hire : Joey Isaacson</title>
     
     <?php 
-        include "header_tags.php"; 
+        include_once "header_tags.php"; 
     ?>
   
+    <script src="js/custom.js" type="text/javascript"></script>
+
   </head>
 
   <body>
@@ -18,6 +20,7 @@
         <div class="container">
             <a href="index.php">Joey Isaacson</a>
             <ul class="nav pull-right">
+              <li><a href="index.php#work">Work</a><li>
               <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,13 +33,13 @@
       <div class="row">
         <div class="span7">
             <h1>Houseplans</h1>
-            <h3 class="light">Lead Interactive Designer since October 2012.</h3>
+            <h3 class="light">Lead Interactive Designer since October 2012</h3>
             <hr>
-            <h3 class="weak">For the past year I have been working at Houseplans.com, an ambitious company determined to bring architectural blueprints to the masses. Starting with an barbones e-commerce platform, I lead the visual rebranding and user exrperience.</h3>
+            <h3 class="weak">For the past year I have been working at Houseplans.com, an ambitious company determined to bring architectural blueprints to the masses. Starting with a barebones e-commerce platform, I lead the visual rebranding and user experience re-design.</h3>
         </div>
 
         <div class="span4 offset1 hidden-phone">
-            <img src="img/houseplans/icon.png">
+            <img src="img/houseplans/houseplans_alt.png">
         </div>  
       </div>
    </div> 
@@ -52,7 +55,7 @@
            <div class="span10">
               <h3 class="bold">Designed the new brand guidelines</h3>
               
-              <p>Starting from scratch I developed the new brand guidlines and UI pattern libraries that are still referenced today.</p>
+              <p>Starting from scratch I developed the new brand guidelines and UI pattern libraries that are still referenced today.</p>
            </div>  
     </div>    
 
@@ -65,7 +68,7 @@
 
           <div class="span10">
             <h3 class="bold">Increased key conversions in the cart checkout process by 12%</h3>
-            <p>We took the sharing process of a typical e-commerce site to the next level by making the buying decision a collaborative process amongst the key decision makers, allowing home owners and builders to share their ideal plans.</p>
+            <p>We took the sharing process of a typical e-commerce site to the next level by making the buying decision a collaborative process among the key decision makers, allowing home owners and builders to share their favorite plans.</p>
           </div> 
     </div>
 
@@ -91,23 +94,21 @@
 
          <div class="span10">
             <h3 class="bold">Built a consistent social presence</h3>
-            <p>Taking the pre-existing Pinterest, Facebook, Twitter and email activities I standardized them so that our entire staff became our social media team. From there we continued to make social and email an integral part of our advertising our sales.</p>
+            <p>Taking the pre-existing Pinterest, Facebook, Twitter and email activities, I standardized our social media presence. This enabled everyone at houseplans.com to be a part of our social media team. From there, we continued to make social and email an integral part of advertising our sales. </p>
          </div>   
     </div>  
 
     <hr>    
 
     <div class="image-overview" class="row">
-        <div class="span10 offset1 center">
-            <img src="img/houseplans/overview.png">
-        </div>  
+            <img class="span10 offset1" src="img/houseplans/overview.png">
     </div> 
+    
     </div>
+   </div>
 
 
-
-
-    <div class="section hidden-phone" id="contact">
+    <div class="section" id="contact">
         <div class="container">
            <?php 
                 //include("footer.php");

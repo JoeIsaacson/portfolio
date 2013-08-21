@@ -6,7 +6,7 @@
     <title>UX Designer For Hire : Joey Isaacson</title>
     
     <?php 
-        include "header_tags.php"; 
+        include_once "header_tags.php"; 
     ?>
   
   </head>
@@ -18,6 +18,7 @@
         <div class="container">
             <a href="index.php">Joey Isaacson</a>
             <ul class="nav pull-right">
+              <li><a href="index.php#work">Work</a><li>
               <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -32,7 +33,7 @@
             <h1>IKEA Floor Map</h1>
             <h3>Never shop again without knowing the dimensions of your room</h3>
             <hr>
-            <h3 class="weak">The IKEA Floor Mapp app solves that by automatically measuring your living space.</h3>
+            <h3 class="weak">The IKEA Floor Map app solves that by automatically measuring your living space.</h3>
         </div>
 
         <div class="span6 hidden-phone">
@@ -54,7 +55,7 @@
 
 
 
-    <div class="section hidden-phone" id="contact">
+    <div class="section" id="contact">
         <div class="container">
            <?php 
                 //include("footer.php");
