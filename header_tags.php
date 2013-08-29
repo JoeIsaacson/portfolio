@@ -27,7 +27,10 @@
 
     <!--Custom CSS Override-->
     <link rel="stylesheet" type="text/css" href="css/override.css">
-    <link rel="stylesheet" type="text/css" href="css/parallax_slider.css">
+    <link rel="stylesheet" type="text/css" href="css/parallax_slider.css">-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     
     <!--Fonts-->
 

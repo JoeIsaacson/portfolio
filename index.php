@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <!-- Designed by Joey Isaacson (yes, me) based on Bootsrap -->
-<!--IMG of New York belongs to a mr (or ms?) "i am pigga" http://www.flickr.com/photos/kopb/-->
 <html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -10,7 +9,6 @@
     <?php 
         include_once "header_tags.php"; 
     ?>
-
 
   </head>
 
@@ -29,7 +27,7 @@
       </div>
     </div>
 
-    <div id="introduction">
+    <!--<div id="introduction">
     <div class="container">
       <div class="row">
           <div class="span6 hidden-phone">
@@ -41,7 +39,7 @@
           </div>
       </div>
     </div>  
-    </div> 
+    </div> -->
 
     <hr class="hidden-phone">
 
@@ -49,16 +47,23 @@
       <div class="container">
         <hr class="visible-phone">
         <div class="row">
-          <div class="span3 hidden-phone">
+          <div class="span3 offset1 hidden-phone">
               <img class="img-circle vertical-align-center" src="img/profile.png">
           </div>  
-          <div class="span8 offset1">
-            <h2 class="center">I design (and build) software that drives results.</h2>
+          <div class="span6 offset1">
+            <h2 class="">I design (and build) software that drives results.</h2>
             <hr>
-            <h3 class="hidden-phone weak center">I am currently employed and living in San Francisco until mid-September but will be available for hire in New York starting October 1st. Feel free to take a look at my work below and contact me at <span class="bold">joeisaacson23@gmail.com</span></h3>
+            <h3 class="hidden-phone weak">I am a UX designer employed and living in San Francisco until mid-September but will be available for hire in New York starting October 1st.</h3>
+            <br>
             <p class="visible-phone weak center">I am currently employed and living in San Francisco until mid-September but will be available for hire in New York starting October 1st. If you have any questions, please contact me at <span class="bold">joeisaacson23@gmail.com</span></p>
             <br><br>
           </div>  
+          </div>
+          <hr>
+          <div class="row">
+             <h3 class="weak center">View my resume on <a href="http://www.linkedin.com/pub/joe-isaacson/1a/304/125">LinkedIn</a> or download a <a href="">PDF</a> to hand out at parties.<h3>  
+          </div>  
+          <hr>
           </div>  
         </div>
       </div>
@@ -74,11 +79,53 @@
         <span id="show" class="btn btn-large btn-inverse">Just show me the work</span>
       </div>
     </div>
+    
+    <!--Slider-->
+
+    <div class="container">
+
+    <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>Warm welcome</h2>
+          <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img"><img src="img/1.jpg" alt="image01" /></div>
+        </div>
+        
+        <div class="da-slide">
+          <h2>Easy management</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img"><img src="img/2.jpg" alt="image01" /></div>
+        </div>
+
+        <div class="da-slide">
+          <h2>Revolution</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img"><img src="img/3.jpg" alt="image01" /></div>
+        </div>
+        
+        <div class="da-slide">
+          <h2>Quality Control</h2>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img"><img src="img/4.jpg" alt="image01" /></div>
+        </div>
+
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
+      
+      </div>
+       
+      </div>
+
 
     <!--Desktop Carousel-->
 
-    <div id="work" class="content hidden-phone">
-    
+    <!--<div id="work" class="content hidden-phone">
       <div id="houseplans" class="slide">
             <div class="container">
             
@@ -204,7 +251,7 @@
     </ul>
 
     </div>
-    </div>
+    </div>-->
 
 
     <!--Mobile Work (Hidden on Desktop)-->
@@ -306,29 +353,35 @@
                 include_once "footer.php";
              ?>
         </div> 
-      </div>
+    </div>
 
 
     <!-- Le javascript
     ================================================== -->
-    
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-    <script src="js/jquery.stacktable.js"></script>
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
-    <script src="js/application.js"></script>
 
 
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/bootstrap-switch.js"></script>
+    <script type="text/javascript" src="js/flatui-checkbox.js"></script>
+    <script type="text/javascript" src="js/flatui-radio.js"></script>
+    <script type="text/javascript" src="js/jquery.tagsinput.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery.stacktable.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        alert("JS Working");
+        $('#da-slider').cslider();
+      });
+    </script> 
   
 
 </body></html>
