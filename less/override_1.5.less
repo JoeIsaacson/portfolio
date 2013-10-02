@@ -1,0 +1,385 @@
+    @import "config";   
+
+
+    @base-color: #363536;  
+    @secondary-color: #7f7f7f;
+    @body-font:'Roboto Slab', serif;
+
+    .paragraph-font {
+        font-family: @body-font;
+     }
+
+
+    body {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      color: @base-color;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      font-family: 'PT Sans', sans-serif;
+      a {text-decoration: none;}
+    }
+
+    .navbar-fixed-top {
+      margin-bottom: 0px;
+    } 
+
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-static-top .navbar-inner {
+      background-color: #fff;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+            color: @secondary-color;
+
+    }
+
+    .navbar-inverse .navbar-inner {
+      border-bottom: 1px solid #e8e8e8;
+      &hover{
+        color: @base-color;
+      }
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
+     .navbar-inverse {
+      a, .brand {
+      text-decoration: none;
+      font-family:'PT Sans Narrow', sans-serif;
+      font-weight: bold;
+      border: none;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      color: @secondary-color;
+      &hover{
+        color: @base-color;
+      }
+      }
+      .brand {
+        padding: 0;
+
+
+      }
+     }
+
+     .navbar-inverse .nav.pull-right a {
+        font-weight: 100;
+        font-size: 1.3em;
+     }
+
+
+     .navbar-inverse .nav.pull-right > li > a,
+     .navbar-inverse .btn-navbar {
+      color: @secondary-color;
+      border: none;
+      text-transform: none;
+      padding-right: 0px;
+      &hover{
+        color: @base-color;
+      }
+     } 
+
+     .navbar-inverse .nav.pull-right > li > a:hover {
+      color: #545354;
+     }
+
+     .jumbotron {
+      margin-top: 90px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 40px;
+      overflow: hidden;
+      h1 {
+        line-height: .8;
+      }
+      h3 {
+        line-height: 1.4;
+      }
+    }
+
+    /*Components*/
+
+    .center{
+      text-align: center;
+    }
+
+    .weak {
+      font-weight: normal;
+    }
+
+    .secondary-color {
+      color: @secondary-color;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .light {
+      color: #7f7f7f;
+    }
+
+    .section {
+        padding-top: 4%;
+        padding-bottom: 4%;
+         h1, h2 { 
+          line-height: .9;
+       }   
+       p {
+        line-height: 2;
+        .secondary-color;
+       }
+    }
+ 
+    /*Custom*/
+
+    #introduction {
+        margin-top: 0px; 
+        padding-top: 100px;
+        padding-bottom: 95px;
+        position: relative;
+        z-index: 0; 
+        background-color: #fff;
+        h1, h2 { 
+          line-height: 1.0;
+        }
+        h3 { line-height: 1.5;
+        }
+        .btn-inverse {
+        color: @base-color;
+        background-color: transparent;
+        border: 2px solid @base-color;
+        &:hover {
+          background-color: lighten(@base-color, 70%);
+        }
+      }
+        #profile {
+          
+          margin-top: 25px;
+          img {
+            width: 80%;
+            height: 80%;
+          }
+       }
+    }
+
+    #mobile-warning {
+      font-weight: 100;
+      padding: 20px;
+      background-color: #ea472c;
+      color: #fff;
+      margin-bottom: 0px;
+      text-align: center; 
+       .btn-white {
+        background-color: transparent;
+        border: 2px solid @white;
+        color: @white;
+        }
+    }
+
+    #work-overview {
+      background-color: #f7f7f7;
+      padding: 50px 0px 50px 0px;
+      hr {
+          border-bottom: none;
+          background-color: @base-color;
+        }
+      .btn-primary {
+        color: @base-color;
+        background-color: transparent;
+        border: 2px solid @base-color;
+        &:hover {
+          background-color: lighten(@base-color, 70%);
+        }
+      }
+    }
+
+    #work-mobile {
+      .btn-inverse {
+        background-color: transparent;
+        border: 2px solid @base-color;
+        color: @base-color;
+      }   
+      .btn-white {
+        background-color: transparent;
+        border: 2px solid @white;
+        color: @white;
+      }
+    }
+
+    #sortey {
+      #GA-icon {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+      }
+      #ipad {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    #houseplans {
+      background-color: #fbf9f9;
+    }
+
+   
+
+    #houseplans .description {
+      padding-top: 0px;
+    }
+
+    .paragraph-overview {
+      padding-top: 6%;
+      padding-bottom: 6%;
+    }
+
+    .image-overview {
+      padding-top: 3%;
+      padding-bottom: 6%;
+    }
+
+    #ikea {
+        background-color: #0081c3;
+        color: #fff;
+        z-index: 3;  
+    }
+
+    #healthyout {
+      .jumbotron {
+      color: #fff;
+      background-color: #6ba620;
+      min-height: 350px;
+      max-height: 350px;
+      margin-top: 90px;
+      padding-top: 120px;
+      overflow: hidden;
+      #appstore {
+        margin-top: 40px;
+        }
+      }
+      .overview {
+        padding-bottom: 40px;
+      }
+    }
+
+    .show-real-pixels {
+      margin-top: 30px;
+    }
+
+    #appstore {
+      height: 45px;
+      max-height: 45px;
+      &:hover {
+        opacity: .6;
+      }
+      margin-right: 20px;
+    }
+
+    #contact {
+      padding: 120px 0 110px 0;
+      background-color: #fff;
+      border-top: 1px solid #e8e8e8;
+      text-align: center;
+    }
+
+    #contact .btn {
+      margin-left: 10px;
+    }
+
+    .general_assembly {
+      padding-top: 50px;
+      padding-bottom: 200px;
+    }
+
+    /*Media Overides*/
+
+      @media (min-width: 1200px) {
+      
+        #introduction {
+          #profile {
+            margin-top: 5px;
+          }
+        }
+
+      }
+
+      @media (min-width: 768px) and (max-width: 979px) {
+        .navbar-fixed-top .navbar-inner {
+          padding-left: 90px;
+        //  padding-right: 90px;
+        }
+
+        .jumbotron {
+        margin-top: 0px;
+        }
+
+        #healthyout .jumbotron {
+        margin-top: 0;
+        padding-top: 70px;
+        }
+
+        #introduction {
+          #profile {
+            margin-top: 15px;
+          }
+        }
+
+      }
+
+
+
+      @media (max-width: 767px) {
+
+      body {
+        padding: 0;
+      }
+
+      h4 {
+        line-height: 1.8;
+      }
+
+      #healthyout .jumbotron {
+        margin-top: 0;
+        padding-top: 20px;
+      }
+
+      .jumbotron {
+        margin-top: 0;
+        padding-top: 20px;
+      }
+
+      .container {
+        padding-top: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .navbar-inverse .brand, 
+      .navbar-inverse a  
+      {
+        padding-left: 40px;
+      }
+
+      .navbar-inverse .nav.pull-right > li > a,
+      .navbar-inverse .btn-navbar 
+      {
+        padding-right: 40px;
+      }
+
+      #introduction
+      {
+        padding-top: 40px;
+        padding-bottom: 60px;
+      }
+
+
+      .section {
+        padding-top: 0px;
+        padding-bottom: 50px;
+      }
+
+    }
+

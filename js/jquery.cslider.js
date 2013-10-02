@@ -15,7 +15,7 @@
 		current		: 0, 	// index of current slide
 		bgincrement	: 50,	// increment the bg position (parallax effect) when sliding
 		autoplay	: false,// slideshow on / off
-		interval	: 4000  // time between transitions
+		interval	: 3000  // time between transitions
     };
 	
 	$.Slider.prototype 	= {
@@ -134,7 +134,7 @@
 				$next.addClass( 'da-slide-current' );
 				
 			}
-			
+
 			// fallback
 			if( !this.cssAnimations || !this.cssAnimations ) {
 				
@@ -151,6 +151,23 @@
 				});
 				
 			}
+
+			if($next.data("slide-type") === "houseplans") {
+			
+				$(".da-arrows-prev").removeClass("da-arrows-prev").addClass("da-arrows-prev-dark");					
+				$(".da-arrows-next").removeClass("da-arrows-next").addClass("da-arrows-next-dark");
+				//$(".da-dots").removeClass("da-dots").addClass("da-dots-dark");
+				//$(".da-dots-current").removeClass("da-dots-current").addClass("da-dots-dark-current");
+
+			
+			} else {
+
+				$(".da-arrows-prev-dark").removeClass("da-arrows-prev-dark").addClass("da-arrows-prev");					
+				$(".da-arrows-next-dark").removeClass("da-arrows-next-dark").addClass("da-arrows-next");
+				//$(".da-dots-dark").removeClass("da-dots-dark").addClass("da-dots");
+				//$(".da-dots-dark-current").removeClass("da-dots-dark-current").addClass("da-dots-current");
+
+			}	
 			
 			this._updatePage();
 			
@@ -237,7 +254,7 @@
 				return false;
 				
 			});
-			
+
 			if( this.cssTransitions ) {
 			
 				if( !this.options.bgincrement ) {

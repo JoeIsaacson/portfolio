@@ -13,31 +13,24 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top hidden-phone">
-      <div class="navbar-inner">
-        <div class="container">
-            <a href="index.php">Joey Isaacson</a>
-            <ul class="nav pull-right">
-              <li><a href="index.php#work">Work</a><li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+  
+  <?php 
+        include_once "navbar.php"; 
+  ?>  
 
 
    <div class="jumbotron" id="ikea">
    <div class="container">
       <div class="row">
-        <div class="span6">
+        <div class="span6 offset1">
             <h1>IKEA Floor Map</h1>
             <h3>Never shop again without knowing the dimensions of your room</h3>
             <hr>
             <h3 class="weak">The IKEA Floor Map app solves that by automatically measuring your living space.</h3>
         </div>
 
-        <div class="span6 hidden-phone">
-            <img src="img/IKEA/IKEA_HEADER.png">
+        <div class="span5 hidden-phone">
+            <img src="img/IKEA/IKEA_HEADER.jpg">
         </div>  
       </div>
    </div> 
