@@ -5,9 +5,9 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>UX Designer For Hire : Joey Isaacson</title>
-    
-    <?php 
-        include_once "header_tags.php"; 
+
+    <?php
+        include_once "header_tags.php";
     ?>
 
   </head>
@@ -17,10 +17,10 @@
     <div class="section" id="introduction">
       <div class="container">
         <div class="row">
-           
+
             <div id="profile" class="span3 offset1 hidden-phone center">
                 <img class="img-circle vertical-align-center pull-left" src="img/profile.png">
-            </div>  
+            </div>
 
             <div class="span7">
               <h1>Joey Isaacson.</h1>
@@ -29,28 +29,28 @@
               <h3 class="hidden-phone weak secondary-color">Through rapid prototyping, designing and testing, I help make complex products easier for people to use.</h3>
             </div>
 
-            <h3 class="visible-phone weak">I am currently employed and living in San Francisco until mid-September but will be available for hire in New York starting October 1st. If you have any questions, please contact me at <span class="bold">joeisaacson23@gmail.com</span></h3>
-            
-            </div>  
+            <h3 class="visible-phone weak">I am currently employed and living in San Francisco until mid-September but will be available for hire in New York starting October 1st. If you have any questions, please contact me at <span class="bold">joey.a.isaacson@gmail.com</span></h3>
+
+            </div>
           </div>
 
           <div id="resume" class="row visible-phone">
             <hr>
             <div class="span5 offset5 center">
-            <h3 class="weak">View my resume on <a target="blank"  href="http://www.linkedin.com/pub/joe-isaacson/1a/304/125">LinkedIn</a> or download a <a target="blank "href="Joey-Isaacson-UX-Designer.pdf">PDF</a><h3>  
+            <h3 class="weak">View my resume on <a target="blank"  href="http://www.linkedin.com/pub/joe-isaacson/1a/304/125">LinkedIn</a> or download a <a target="blank "href="Joey-Isaacson-UX-Designer.pdf">PDF</a><h3>
           </div>
 
         </div>
       </div>
-    </div>    
+    </div>
 
     <div id="work-overview" class="hidden-phone">
     <div class="container">
-      
+
       <div class="row section">
         <div class="span3 offset1">
           <img src="img/healthyout/iphone-mock.png" alt="healthyout iphone"/>
-        </div>  
+        </div>
 
         <div class="span6 offset1">
           <h1>HealthyOut</h1>
@@ -63,19 +63,19 @@
           </a>
 
           <a target="blank" class="btn btn-large btn-primary cta" href="healthyout.php">View the work</a>
-        </div> 
-      </div> 
+        </div>
+      </div>
 
       <hr>
 
       <div id="sortey" class="row section">
         <div class="span6">
             <h1>Sortey</h1>
-            <h3>A <img id="GA-icon" src="img/icons/icon-general-assembly.png"> General Assembly UX concept.</a></h3>           
+            <h3>A <img id="GA-icon" src="img/icons/icon-general-assembly.png"> General Assembly UX concept.</a></h3>
             <hr>
             <p>Have you ever seen a product before but can't remember where you saw it?<p>
             <p>Sortey is the brainchild of our General Assembly UX class, and now a concept in development that aims to solve the issue of re-finding. Re-finding is the process in which you have to try and re-create a previous search you did in order to find something again.</p>
-        </div>  
+        </div>
 
         <div class="span5 offset1 center ">
             <a target="blank" href="sortey.com">
@@ -83,8 +83,8 @@
             </a>
             <br>
             <a target="blank" href="sortey.com"><div class="btn btn-large btn-primary cta">Learn more</div></a>
-        </div>   
-      </div>  
+        </div>
+      </div>
 
       <hr>
 
@@ -93,17 +93,17 @@
           <a target="blank" href="houseplans.php">
           <img src="img/houseplans/houseplans.png">
           </a>
-        </div>  
+        </div>
 
        <div class="span5 offset1">
             <h1>Houseplans</h1>
             <h3>Lead Interactive Designer</h3>
             <hr>
-            <p>What happens when you want customized architecture without the heavy price tag?</p>   
+            <p>What happens when you want customized architecture without the heavy price tag?</p>
             <p>For the past 8 months, I have been working to bring affordable architecture to everyone.</p>
             <br>
             <a target="blank" href="houseplans.php"><div class="btn btn-large btn-primary cta">Learn more</div></a>
-        </div>  
+        </div>
     </div>
 
     <hr>
@@ -124,23 +124,23 @@
                 <a target="blank" href="IKEA.php">
                   <img src="img/IKEA/IKEA_HEADER.png">
                 </a>
-              </div>  
+              </div>
 
-            </div>  
-        </div>  
+            </div>
+        </div>
 </div>
 </div>
 
-<div id="mobile-warning" class="visible-phone"> 
+<div id="mobile-warning" class="visible-phone">
       <div class="row">
-        <h4 class="weak">Thank you for viewing this site on your mobile device, but I <i>highly</i> reccomend you wait until you can view it on a desktop computer.</span> 
+        <h4 class="weak">Thank you for viewing this site on your mobile device, but I <i>highly</i> reccomend you wait until you can view it on a desktop computer.</span>
       </div>
 
       <div class="row">
         <span id="show-mobile-content" class="btn btn-large btn-white">Just show me the work</span>
       </div>
 </div>
-  
+
 <!--Mobile Work (Hidden on Desktop)-->
 
 <div id="work-mobile" class="hidden">
@@ -152,7 +152,7 @@
                   <a class="btn btn-large btn-white" href="healthyout.php">
                     <img src="img/healthyout/iphone-mock.png">
                   </a>
-              </div>  
+              </div>
 
               <div class="span6">
                   <h1>HealthyOut</h1>
@@ -162,11 +162,11 @@
                       <div class="span3 cta">
                           <a class="btn btn-large btn-inverse" href="healthyout.php">Learn More</a>
                       </div>
-              </div>  
-          </div>  
-        </div>  
-    </div> 
-      
+              </div>
+          </div>
+        </div>
+    </div>
+
     <div class="section" id="sortey">
       <div class="container" >
           <div class="row">
@@ -177,15 +177,15 @@
                 <h4 class="weak">Sortey is the brainchild of our General Assembly UX class, and now a concept in development.</h4>
                 <div>
                   <a href="http://sortey.com"><div class="btn btn-large btn-inverse">View the concept</div></a>
-                </div>   
-            </div>  
+                </div>
+            </div>
 
             <div class="span7 hidden-phone">
                 <img src="img/sortey.png">
-            </div> 
-          
+            </div>
+
           </div>
-      </div>  
+      </div>
     </div>
 
     <div class="section" id="houseplans">
@@ -195,7 +195,7 @@
                 <a href="houseplans.php">
                   <img src="img/houseplans/icon.png">
                 </a>
-            </div>  
+            </div>
 
             <div class="span5 offset1">
                 <h1>HOUSEPLANS</h1>
@@ -205,10 +205,10 @@
                 <div class="cta">
                   <a class="btn btn-large btn-inverse" href="houseplans.php">Learn More</a>
                 </div>
-            </div>  
+            </div>
         </div>
-      </div>  
-    </div>  
+      </div>
+    </div>
 
     <div class="section" id="ikea">
       <div class="container">
@@ -220,17 +220,17 @@
                 <div class="span3 cta">
                     <a class="btn btn-large btn-white" href="IKEA.php">View the concept</a>
                 </div>
-            </div>    
+            </div>
 
             <div class="span6 hidden-phone">
                 <a href="/IKEA.php">
                   <img src="img/IKEA/IKEA_HEADER.png">
                 </a>
-            </div>    
+            </div>
         </div>
-      </div>  
+      </div>
     </div>
- 
+
 
     </div>
 
@@ -238,10 +238,10 @@
 
     <div id="contact" class="section hidden-phone">
         <div class="container">
-           <?php 
+           <?php
                 include_once "footer.php";
              ?>
-        </div> 
+        </div>
     </div>
 
 
@@ -265,4 +265,15 @@
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/jquery.cslider.js"></script>
 
-</body></html>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54275792-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</body>
+</html>
