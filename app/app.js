@@ -10,6 +10,10 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
 
+    $routeProvider.when('/home', {
+        templateUrl: 'views/home/home.html'
+    });
+
     $routeProvider.when('/view1', {
         templateUrl: 'view1/view1.html',
         controller: 'View1Ctrl'
