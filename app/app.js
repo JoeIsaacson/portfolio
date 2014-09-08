@@ -2,7 +2,8 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-    'ngRoute'
+    'ngRoute',
+    'myApp.work-controller'
 ]).
 config(['$routeProvider', function($routeProvider) {
 
@@ -13,15 +14,18 @@ config(['$routeProvider', function($routeProvider) {
     });
 
     $routeProvider.when('/healthyout', {
-        templateUrl: 'views/work/healthyout.html'
+        templateUrl: 'views/work/healthyout.html',
+        controller: 'workController'
     });
 
     $routeProvider.when('/houseplans', {
         templateUrl: 'views/work/houseplans.html',
+        controller: 'workController'
     });
 
     $routeProvider.when('/ikea', {
         templateUrl: 'views/work/ikea.html',
+        controller: 'workController'
     });
 
 }]);

@@ -46,7 +46,7 @@
             </div>
 
             <div class="span10 offset1">
-                <div class="btn btn-large btn-info pull-right show-real-pixels">
+                <div class="show-real-pixels btn btn-large btn-info pull-right" ng-click="showWireframes(1)">
                     <span>show real pixels</span>
                     <span class="hidden">show wireframes</span>
                 </div>
@@ -60,16 +60,16 @@
                 <hr>
             </div>
 
-            <div class="span10 offset1 center not-hidden image">
-                <img src="img/healthyout/WF-search.png">
+            <div class="span10 offset1 center image">
             </div>
 
-            <div class="span10 offset1 center hidden image">
-                <img src="img/healthyout/HF-search.png">
+            <div class="span10 offset1 center image">
+                <img src="img/healthyout/HF-search.png" ng-hide="wireframeStatus(2)">
+                <img src="img/healthyout/WF-search.png" ng-show="wireframeStatus(2)">
             </div>
 
             <div class="span10 offset1">
-                <div class="btn btn-large btn-info pull-right show-real-pixels">
+                <div class="show-real-pixels btn btn-large btn-info pull-right" ng-click="showWireframes(2)">
                     <span>show real pixels</span>
                     <span class="hidden">show wireframes</span>
                 </div>

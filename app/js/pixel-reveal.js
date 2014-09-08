@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	alert("Javascript Working");
 
 	$("#work-tab").click(function(){
   		$('html,body').animate({
@@ -21,9 +20,16 @@ $(document).ready(function() {
 	});
 
 	$(".show-real-pixels").click(function () {
-        $(this).closest(".row").children(".image").toggleClass("hidden");
+        console.log('CLicked!');
+		$(this).closest(".row").children(".image").toggleClass("hidden");
         $(this).children("span").toggleClass("hidden");
 		console.log('FIRED');
+	});
+
+	console.log("Hello 1");
+
+	$("#show-pixels").click(function () {
+			console.log("Hello!");
 	});
 
 });
