@@ -5,7 +5,8 @@ angular.module('myApp', [
     'ngRoute',
     'myApp.work-controller'
 ]).
-config(['$routeProvider', function($routeProvider) {
+value('$anchorScroll', angular.noop)
+.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider.otherwise({redirectTo: '/home'});
 
