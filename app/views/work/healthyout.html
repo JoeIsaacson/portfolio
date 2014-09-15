@@ -1,0 +1,76 @@
+<div ng-include autoscroll="false" src=" 'views/common/navbar.html' "></div>
+
+<div id="healthyout">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="span5 offset1">
+                    <h1>HealthyOut</h1>
+                    <h3>Interactive Mobile Designer</h3>
+                    <hr>
+                    <h3 class="weak paragraph-font">Create your own, flexible healthy diet by searching local restaurant dishes.</h3>
+                    <a href="https://itunes.apple.com/us/app/healthyout-free-restaurant/id566409966?mt=8">
+                        <img id="appstore" src="img/icons/appstore.png">
+                    </a>
+                </div>
+
+                <div class="span4 offset1 hidden-phone">
+                    <img src="img/healthyout/iphone-mock.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row paragraph-overview">
+            <div class="span10 offset1 overview paragraph-font secondary-color">
+                <h3 class="weak">Working closely with the co-founder of HealthyOut, <a href="https://twitter.com/wdot">@wdot</a>, we were able to take HealthyOut from a rough, low-fidelity wireframe to a polished app that made it into the top 10 food apps on the Apple AppStore.</h3>
+                <br>
+                <h3 class="weak">Below are the high fidelity wireframes and visual designs for the On-boarding process and Search process that started from rough concepts on napkins, envelopes and discussions via Skype.</h3>
+            </div>
+        </div>
+
+        <div class="row image-overview">
+            <div class="span10 offset1">
+                <br>
+                <h3>Onboarding User Flow</h3>
+                <p>Four step process for signing up for HealthyOut via Facebook</p>
+                <hr>
+            </div>
+
+            <div class="image span10 offset1 center">
+                <img src="img/healthyout/WF-onboard.png" ng-hide="wireframeOne">
+                <img src="img/healthyout/HF-onboard.png" ng-show="wireframeOne">
+            </div>
+
+            <div class="span10 offset1">
+                <div class="show-real-pixels btn btn-large btn-info pull-right" ng-click="showWireframes('wireframeOne')">
+                    <span>show real pixels</span>
+                    <span class="hidden">show wireframes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row image-overview">
+            <div class="span10 offset1">
+                <h3>Meal Search User Flow</h3>
+                <p>Searching and filtering dishes by food type, delivery type and restaurant availability was all possible with one screen.</p>
+                <hr>
+            </div>
+
+            <div class="image span10 offset1 center">
+                <img src="img/healthyout/HF-search.png" ng-hide="wireframeTwo">
+                <img src="img/healthyout/WF-search.png" ng-show="wireframeTwo">
+            </div>
+
+            <div class="span10 offset1">
+                <div class="show-real-pixels btn btn-large btn-info pull-right" ng-click="showWireframes('wireframeTwo')">
+                    <span>show real pixels</span>
+                    <span class="hidden">show wireframes</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
