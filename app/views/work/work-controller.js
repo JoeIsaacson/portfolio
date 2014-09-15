@@ -8,7 +8,7 @@ angular.module('myApp.work-controller', ['ngRoute'])
     '$location',
     '$anchorScroll',
     '$routeParams',
-    function($scope, $rootScope, $location, $anchorScroll, $routeParams) {
+    function($scope, $rootScope, $location, $routeParams) {
 
         $scope.wireframeOne = true;
         $scope.wireframeTwo = true;
@@ -22,18 +22,8 @@ angular.module('myApp.work-controller', ['ngRoute'])
             };
         };
 
-    // $scope.scrollTo = function(id) {
-    //     $location.hash(id);
-    //     $anchorScroll();
-    //     console.log("hellow!");
-    // };
-
-  $scope.scrollTo = function(location) {
-    $location.hash(location);
-    console.log("hello!")
-    $anchorScroll();
-  };
-
-
-
+        $scope.scrollTo = function(id) {
+            console.log('id');
+            $location.hash(id);
+        };
 }]);
