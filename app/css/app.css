@@ -11,6 +11,14 @@ body a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 /*Components*/
 
 .secondary-color {
@@ -47,8 +55,7 @@ body a {
 /*Custom*/
 
 .header h1 {
-    font-size: 55px;
-    text-transform: uppercase;
+    font-size: 52px;
 }
 
 .header h2 {
@@ -57,7 +64,7 @@ body a {
 
 .header .iphone-mock--container {
     position: relative;
-    margin-top: -110px;
+    margin-top: -70px;
 }
 
 .header .iphone-mock--container .iphone-mock {
@@ -93,7 +100,6 @@ body a {
     .header {
         margin-top: 0px;
         padding-top: 20px;
-        padding-bottom: 20px;
         position: relative;
         z-index: 0;
     }
@@ -116,9 +122,14 @@ body a {
     }
 
     .sub-header--container h2 {
-        font-size: 55px;
+        font-size: 52px;
+    }
+
+    .main-overview {
+        background-color: #F1EEEE;
     }
 }
+
 
 .main-overview--sub-title {
     line-height: 1.5;
@@ -126,7 +137,14 @@ body a {
     padding-bottom: 30px;
 }
 
+.main-overview--city {
+    background-color: #8F5BA1;
+    color: #E9ABAB;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .main-overview--city h1 {
     line-height: 1.5;
-    font-size: 55px;
+    font-size: 52px;
 }
