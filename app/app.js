@@ -3,29 +3,58 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
     'ngRoute',
-    'myApp.work-controller'
+    'ui.router',
+    'work-controller',
+    'home-controller'
 ])
-.config(['$routeProvider', function($routeProvider, $provide) {
+.config(function($stateProvider, $urlRouterProvider) {
 
-    $routeProvider.otherwise({redirectTo: '/home'});
+    // For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise("/home");
 
-    $routeProvider.when('/home', {
-        templateUrl: 'views/home/home.html'
-    });
+    $stateProvider
+        .state('home', {
+            url: "/home",
+            templateUrl: "views/home/home.tpl.html",
+            controller: 'homeController'
+        })
+        .state('home.about', {
+            url: "/about",
+            views: {
+                'about': {
+                    templateUrl: "views/about/_about.tpl.html"
+                }
+            }
+        })
+        .state('home.healthyOut', {
+            url: "/healthyout",
+            views: {
+                'about': {
+                    templateUrl: "views/about/_about.tpl.html"
+                }
+            }
+        });
 
-    $routeProvider.when('/healthyout', {
-        templateUrl: 'views/work/healthyout.html',
-        controller: 'workController'
-    });
 
-    $routeProvider.when('/houseplans', {
-        templateUrl: 'views/work/houseplans.html',
-        controller: 'workController'
-    });
+    // $routeProvider.otherwise({redirectTo: '/home'});
 
-    $routeProvider.when('/ikea', {
-        templateUrl: 'views/work/ikea.html',
-        controller: 'workController'
-    });
+    // $routeProvider.when('/home', {
+    //     templateUrl: 'views/home/home.html'
+    // });
+    //
+    // $routeProvider.when('/healthyout', {
+    //     templateUrl: 'views/work/healthyout.html',
+    //     controller: 'workController'
+    // });
+    //
+    // $routeProvider.when('/houseplans', {
+    //     templateUrl: 'views/work/houseplans.html',
+    //     controller: 'workController'
+    // });
+    //
+    // $routeProvider.when('/ikea', {
+    //     templateUrl: 'views/work/ikea.html',
+    //     controller: 'workController'
+    // });
 
-}]);
+});

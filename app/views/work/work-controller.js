@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.work-controller', ['ngRoute'])
+angular.module('work-controller', ['ngRoute'])
 
 .controller('workController', [
     '$scope',
