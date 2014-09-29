@@ -24,6 +24,8 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
 }
 
 body a {
@@ -39,6 +41,19 @@ h4 {
 
 
 /*Components*/
+
+.btn {
+    border-radius: 4px;
+}
+
+.btn-primary {
+    border-color: transparent;
+    background-color: #9B9B9B;
+}
+
+.btn-primary:hover {
+    background-color: #4A4A4A;
+}
 
 .secondary-color {
     color: #7f7f7f;
@@ -61,8 +76,17 @@ h4 {
     padding-bottom: 75px;
 }
 
+.section-top {
+    padding-bottom: 0;
+}
+
+.section-bottom {
+    padding-top: 0;
+}
+
 .section .overview-paragraph {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .segmented-controls {
@@ -82,6 +106,15 @@ h4 {
     color: #fff;
 }
 
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
 /*Custom*/
 
 /*HEADER*/
@@ -97,13 +130,13 @@ h4 {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -164px;
+    bottom: -165px;
 }
 
 .main-overview--sub-title {
     line-height: 1.5;
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .main-overview--city {
@@ -117,12 +150,12 @@ h4 {
 @media (min-width: 990px) {
 
     .main-overview--sub-title {
-        padding-bottom: 100px;
+        padding-bottom: 95px;
     }
 
     .main-overview .iphone-mock-hand {
         position: absolute;
-        bottom: -224px;
+        bottom: -225px;
     }
 
 }
@@ -211,4 +244,18 @@ h4 {
     .self-description {
         padding-bottom: 40px;
     }
+}
+
+/* HEALTHYOUT */
+
+.healthyout--header {
+    background-color: #47C965;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.healthyout--header .logo {
+    width: 60%;
+    margin-top: 30%;
+    margin-bottom: 20%;
 }

@@ -10,51 +10,39 @@ angular.module('myApp', [
 .config(function($stateProvider, $urlRouterProvider) {
 
     // For any unmatched url, redirect to /state1
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise("/home/work");
 
     $stateProvider
         .state('home', {
             url: "/home",
-            templateUrl: "views/home/home.tpl.html",
-            controller: 'homeController'
+            views: {
+                'header': {
+                    templateUrl: "views/home/home.tpl.html",
+                    controller: 'homeController'
+                },
+                'work': {
+                    templateUrl: "views/work/_work-overview.tpl.html"
+                }
+            }
         })
-        .state('home.about', {
+        .state('about', {
             url: "/about",
             views: {
+                'header': {
+                    templateUrl: "views/home/home.tpl.html",
+                    controller: 'homeController'
+                },
                 'about': {
                     templateUrl: "views/about/_about.tpl.html"
                 }
             }
         })
-        .state('home.healthyOut', {
+        .state('crowdsurge', {
+            url: "/crowdsurge",
+            templateUrl: "views/work/_crowdsurge.tpl.html"
+        })
+        .state('healthyout', {
             url: "/healthyout",
-            views: {
-                'about': {
-                    templateUrl: "views/about/_about.tpl.html"
-                }
-            }
+            templateUrl: "views/work/_healthyout.tpl.html"
         });
-
-
-    // $routeProvider.otherwise({redirectTo: '/home'});
-
-    // $routeProvider.when('/home', {
-    //     templateUrl: 'views/home/home.html'
-    // });
-    //
-    // $routeProvider.when('/healthyout', {
-    //     templateUrl: 'views/work/healthyout.html',
-    //     controller: 'workController'
-    // });
-    //
-    // $routeProvider.when('/houseplans', {
-    //     templateUrl: 'views/work/houseplans.html',
-    //     controller: 'workController'
-    // });
-    //
-    // $routeProvider.when('/ikea', {
-    //     templateUrl: 'views/work/ikea.html',
-    //     controller: 'workController'
-    // });
-
 });

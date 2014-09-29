@@ -6,6 +6,7 @@
             </div>
         </div>
     </div>
+
     <div class="sub-header--container container">
         <div class="row">
             <div class="col-sm-8">
@@ -14,7 +15,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="main-overview">
     <div class="main-overview--intro container">
@@ -36,25 +36,18 @@
 <div class="sub-overview">
     <div class="container">
         <div class="row section">
-            <div class="self-description col-sm-10 col-sm-offset-1 text-center">
-                <p>Product Designer with 2+ years in the agency and startup world. Helping people create useful customer facing tools by asking the right questions and observing user behaviors and patterns.</p>
-            </div>
             <div class="col-xs-12">
                 <ul class="sub-nav segmented-controls nav">
                     <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
                         <span class="hidden-xs">My</span>
                         Work
                     </li>
-                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home.about' }" ui-sref="home.about">
+                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'about' }" ui-sref="about">
                         About
                         <span class="hidden-xs">me</span>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="section">
-            <div ng-include src="'views/work/_work-overview.tpl.html'" ng-hide="location === 'home.about'"></div>
-            <div ui-view="about"></div>
         </div>
     </div>
 </div>
