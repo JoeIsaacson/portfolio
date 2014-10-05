@@ -33,11 +33,31 @@
     </div>
 </div>
 
-<div class="sub-overview">
+<div id="sub-overview" class="sub-overview">
     <div class="container">
-        <div class="row section">
-            <div class="col-xs-12">
-                <ul class="sub-nav segmented-controls nav">
+        <div class="row">
+            <div class="sub-nav col-xs-12">
+                <ul class="segmented-controls nav">
+                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
+                        <span class="hidden-xs">My</span>
+                        Work
+                    </li>
+                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'about' }" ui-sref="about">
+                        About
+                        <span class="hidden-xs">me</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sub-overview-fixed" class="sub-overview-fixed fixed compressed hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="sub-nav col-xs-12">
+                <h3 id="sub-overview--name" class="sub-overview--name"><a href="/#">Joey Isaacson</a></h3>
+                <ul class="segmented-controls nav">
                     <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
                         <span class="hidden-xs">My</span>
                         Work
