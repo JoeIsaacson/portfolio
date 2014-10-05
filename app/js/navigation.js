@@ -1,35 +1,31 @@
+var calculate = function () {
+
+    var offset = $(window).scrollTop();
+
+    var subOverview = $( "#sub-overview" );
+    var subOverviewFixed = $( "#sub-overview-fixed" );
+
+    var bodyContainer = $( "#body-container" );
+    var bodyContainerOffset = bodyContainer.offset().top - 90;
+
+    var subOverviewName = $( "#sub-overview--name" );
+
+    if ( offset > (bodyContainerOffset - 15) ) {
+        subOverviewFixed.removeClass("compressed");
+        subOverviewName.css("height", offset - (bodyContainerOffset) + "px")
+    } else if (offset < (bodyContainerOffset - 15) ) {
+        subOverviewFixed.addClass("compressed");
+    }
+}
+
 $(document).ready(function() {
 
+    setTimeout(function() {
+        calculate();
+        console.log('fired');
+    }, 500);
+
     $(document).scroll(function () {
-
-        var offset = $(window).scrollTop();
-
-        var subOverview = $( "#sub-overview" );
-        var subOverviewFixed = $( "#sub-overview-fixed" );
-
-        var workOverview = $( "#work-overview" );
-        var workOverviewOffset = workOverview.offset().top - 90;
-
-        var subOverviewName = $( "#sub-overview--name" );
-
-        console.log(workOverviewOffset);
-
-
-
-        if ( offset > (workOverviewOffset - 15) ) {
-            subOverviewFixed.removeClass("compressed");
-            subOverviewName.css("height", offset - (workOverviewOffset) + "px")
-        } else if (offset < (workOverviewOffset - 8) ) {
-            subOverviewFixed.addClass("compressed");
-        }
-
-
-
-        var calculate = function () {
-
-
-        }
-
         calculate();
     });
 

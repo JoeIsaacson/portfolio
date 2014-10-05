@@ -37,9 +37,8 @@ h2,
 h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.9;
+    line-height: 1.4;
 }
-
 
 /*Components*/
 
@@ -218,9 +217,6 @@ h4 {
     line-height: 1.1;
 }
 
-.sub-overview--name a {
-    color: #666;
-}
 
 @media (max-width: 767px) {
 
@@ -291,20 +287,20 @@ h4 {
 
 /* HEALTHYOUT */
 
-.healthyout--header {
+.healthyout-jumbotron--header {
     background-color: #47C965;
     color: #fff;
     padding-top: 50px;
 }
 
-.healthyout--header .logo {
+.healthyout-jumbotron--header .logo {
     width: 60%;
     margin-top: 30%;
     margin-bottom: 20%;
 }
 
 @media (max-width: 767px) {
-    .healthyout--header .logo {
+    .healthyout-jumbotron--header .logo {
         width: 90%;
     }
 }
