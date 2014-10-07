@@ -203,31 +203,34 @@ hr {
     min-height: 90px;
 }
 
-.fixed {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-}
+@media (min-width: 767px) {
 
-.sub-overview-fixed {
-    z-index: 1;
-    border-bottom: 1px solid #eee;
-    background-color: #fff;
-}
+    .fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
 
-.sub-overview-fixed.compressed {
-    max-height: 0px;
-    overflow: hidden;
-}
+    .sub-overview-fixed {
+        z-index: 1;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+    }
 
-.sub-overview--name {
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    max-height: 30px !important;
-    line-height: 1.1;
+    .sub-overview-fixed.compressed {
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .sub-overview--name {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        max-height: 30px !important;
+        line-height: 1.1;
+    }
 }
 
 
