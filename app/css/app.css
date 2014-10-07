@@ -23,9 +23,9 @@ body {
     color: #666;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    line-height: 1.75;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    line-height: 1.85;
 }
 
 body a {
@@ -38,6 +38,15 @@ h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
+}
+
+.lead {
+    font-size: 22px;
+    line-height: 1.95;
+}
+
+hr {
+    border-width: 5px;
 }
 
 /*Components*/
@@ -119,6 +128,10 @@ h4 {
     .footer {
         margin-top: 50px;
     }
+}
+
+.wireframe-row .wireframe {
+    padding: 10px 5px;
 }
 
 /*Custom*/
@@ -287,20 +300,74 @@ h4 {
 
 /* HEALTHYOUT */
 
-.healthyout-jumbotron--header {
+.healthyout-jumbotron {
     background-color: #47C965;
     color: #fff;
     padding-top: 50px;
 }
 
-.healthyout-jumbotron--header .logo {
+.healthyout-jumbotron .logo {
     width: 60%;
     margin-top: 30%;
     margin-bottom: 20%;
 }
 
 @media (max-width: 767px) {
-    .healthyout-jumbotron--header .logo {
-        width: 90%;
+    .healthyout-jumbotron .logo {
+        width: 80%;
     }
+
+    .healthyout-overview {
+        padding-top: 60px;
+    }
+}
+
+/* CrowdSurge */
+
+.crowdsurge-jumbotron {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.crowdsurge-jumbotron--header {
+    padding-top: 80px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.crowdsurge-work .video-embed-conatiner {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media (max-width: 990px) {
+
+    .crowdsurge-jumbotron--header {
+        padding-top: 40px;
+        font-size: 40px;
+    }
+
+    .crowdsurge-jumbotron--sub-header {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .crowdsurge-jumbotron--header {
+        padding-top: 0px;
+    }
+
+}
+
+.crowdsurge-visual-design {
+    background-color: #FEEEEE;
+}
+
+.crowdsurge-visual-design hr {
+    border-color: #D06371;
+}
+
+.crowdsurge-visual-design--header {
+    color: #D06371;
 }
