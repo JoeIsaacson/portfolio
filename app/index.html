@@ -32,10 +32,7 @@
     </head>
 
     <body>
-        <div ui-view="header"></div>
-        <div ui-view="work"></div>
-        <div ui-view="about"></div>
-        <div ui-view></div>
+        <div ui-view autoscroll="true"></div>
         <div ng-include="'views/common/_footer.tpl.html'"></div>
     </body>
 
@@ -43,6 +40,19 @@
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
+
+    <!--Google Analytics -->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-54275792-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
     <!--ANGULAR-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>

@@ -34,40 +34,25 @@
 </div>
 
 <div id="sub-overview" class="sub-overview">
-    <div class="container">
-        <div class="row">
-            <div class="sub-nav col-xs-12">
-                <ul class="segmented-controls nav">
-                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
-                        <span class="hidden-xs">My</span>
-                        Work
-                    </li>
-                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'about' }" ui-sref="about">
-                        About
-                        <span class="hidden-xs">me</span>
-                    </li>
-                </ul>
+    <div class="sub-overview--container">
+        <div class="container">
+            <div class="row">
+                <div class="sub-nav col-xs-12">
+                    <ul class="segmented-controls nav">
+                        <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home.work' }" ui-sref="home.work">
+                            <span class="hidden-xs">My</span>
+                            Work
+                        </li>
+                        <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home.about' }" ui-sref="home.about">
+                            About
+                            <span class="hidden-xs">me</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div id="sub-overview-fixed" class="sub-overview-fixed fixed compressed hidden-xs">
-    <div class="container">
-        <div class="row">
-            <div class="sub-nav col-xs-12">
-                <h3 id="sub-overview--name" class="sub-overview--name" ui-sref="home">Joey Isaacson</h3>
-                <ul class="segmented-controls nav">
-                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
-                        <span class="hidden-xs">My</span>
-                        Work
-                    </li>
-                    <li class="segmented-controls--control text-center" ng-class="{'active': location === 'about' }" ui-sref="about">
-                        About
-                        <span class="hidden-xs">me</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<div ui-view="work"></div>
+<div ui-view="about"></div>
