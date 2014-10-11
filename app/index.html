@@ -32,84 +32,7 @@
     </head>
 
     <body>
-        <div class="header">
-            <div class="header--container container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h1>Joey Isaacson</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sub-header--container container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h2>Product Designer</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="main-overview">
-            <div class="main-overview--intro container">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <h1 class="main-overview--city visible-xs">Brooklyn, NY</h1>
-                        <h4 class="main-overview--sub-title">Based in Brooklyn, NY<br>
-                            Available for hire as of 9/12/14<br>
-                            <span class="bold">joey.a.isaacson@gmail.com</span>
-                        </h4>
-                    </div>
-                    <div class="col-sm-5 hidden-xs">
-                        <img class="iphone-mock-hand img-responsive" src="img/CDV.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="sub-overview" class="sub-overview">
-            <div class="container">
-                <div class="row">
-                    <div class="sub-nav col-xs-12">
-                        <ul class="segmented-controls nav">
-                            <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
-                                <span class="hidden-xs">My</span>
-                                Work
-                            </li>
-                            <li class="segmented-controls--control text-center" ng-class="{'active': location === 'about' }" ui-sref="about">
-                                About
-                                <span class="hidden-xs">me</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="sub-overview-fixed" class="sub-overview-fixed fixed compressed hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="sub-nav col-xs-12">
-                        <h3 id="sub-overview--name" class="sub-overview--name" ui-sref="home">Joey Isaacson</h3>
-                        <ul class="segmented-controls nav">
-                            <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home' }" ui-sref="home">
-                                <span class="hidden-xs">My</span>
-                                Work
-                            </li>
-                            <li class="segmented-controls--control text-center" ng-class="{'active': location === 'about' }" ui-sref="about">
-                                About
-                                <span class="hidden-xs">me</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div ui-view="header"></div> -->
-        <div ui-view="work"></div>
-        <div ui-view="about"></div>
-        <div ui-view></div>
+        <div ui-view autoscroll="true"></div>
         <div ng-include="'views/common/_footer.tpl.html'"></div>
     </body>
 
@@ -117,6 +40,19 @@
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
+
+    <!--Google Analytics -->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-54275792-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
     <!--ANGULAR-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>

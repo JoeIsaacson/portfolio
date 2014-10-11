@@ -4,10 +4,11 @@
 angular.module('myApp', [
     'ngRoute',
     'ui.router',
-    'work-controller',
-    'home-controller'
+    'home-controller',
+    'work-controller'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
+
 
     // For any unmatched url, redirect to /state1
     $urlRouterProvider.otherwise("/home/work");
@@ -15,23 +16,20 @@ angular.module('myApp', [
     $stateProvider
         .state('home', {
             url: "/home",
+            templateUrl: "views/home/home.tpl.html",
+            controller: 'homeController'
+        })
+        .state('home.work', {
+            url: "/work",
             views: {
-                'header': {
-                    templateUrl: "views/home/home.tpl.html",
-                    controller: 'homeController'
-                },
                 'work': {
                     templateUrl: "views/work/_work-overview.tpl.html"
                 }
             }
         })
-        .state('about', {
+        .state('home.about', {
             url: "/about",
             views: {
-                'header': {
-                    templateUrl: "views/home/home.tpl.html",
-                    controller: 'homeController'
-                },
                 'about': {
                     templateUrl: "views/about/_about.tpl.html"
                 }

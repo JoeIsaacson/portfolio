@@ -116,7 +116,7 @@ hr {
 }
 
 .footer {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 40px;
     margin-top: 100px;
     color: #929090;
@@ -124,15 +124,16 @@ hr {
     border-top: 1px solid #e5e5e5;
 }
 
-@media (max-width: 767px) {
-    .footer {
-        margin-top: 50px;
-    }
+.footer .footer--lead {
+    padding-bottom: 30px;
 }
 
-.wireframe-row .wireframe {
-    padding: 10px 5px;
+video {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 30px;
 }
+
 
 /*Custom*/
 
@@ -198,9 +199,14 @@ hr {
 }
 
 .sub-overview {
+    z-index: 1;
+}
+
+.sub-overview--container {
+    min-height: 120px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
-    min-height: 90px;
+    z-index: 1;
 }
 
 @media (min-width: 767px) {
@@ -210,17 +216,6 @@ hr {
         left: 0;
         right: 0;
         top: 0;
-    }
-
-    .sub-overview-fixed {
-        z-index: 1;
-        border-bottom: 1px solid #eee;
-        background-color: #fff;
-    }
-
-    .sub-overview-fixed.compressed {
-        max-height: 0px;
-        overflow: hidden;
     }
 
     .sub-overview--name {
@@ -287,6 +282,19 @@ hr {
         padding-top: 25px;
     }
 
+}
+
+.influence .influence--header {
+    margin: 20px 0 30px 0;
+}
+
+.bordered-bottom li {
+    border-bottom: 2px solid #eee;
+    padding: 20px 0;
+}
+
+.bordered-bottom li:last-of-type {
+    border-bottom: 0;
 }
 
 
@@ -373,4 +381,10 @@ hr {
 
 .crowdsurge-visual-design--header {
     color: #D06371;
+}
+
+@media (max-width: 767px) {
+    .crowdsurge-visual-design--image {
+        padding: 30px;
+    }
 }

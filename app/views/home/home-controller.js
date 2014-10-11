@@ -8,6 +8,7 @@ angular.module('home-controller', ['ngRoute'])
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
         $rootScope.location = $state.current.name;
+        console.log($rootScope.location);
     });
 
 
