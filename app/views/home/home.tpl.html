@@ -1,51 +1,52 @@
-<div class="header">
-    <div class="header--container container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h1>Joey Isaacson</h1>
+<div class="jumbotron">
+    <div class="jumbotron--container">
+        <div class="header--container container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>Joey Isaacson</h1>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="sub-header--container container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>Product Designer</h2>
+        <div class="sub-header--container container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Product Designer</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-overview">
+            <div class="main-overview--intro container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 class="main-overview--city visible-xs">Brooklyn, NY</h1>
+                        <h4 class="main-overview--sub-title"><span class="hidden-xs">Based in Brooklyn, NY</span>
+                            <br class="hidden-xs">
+                            Feel free to reach me at<br>
+                            <a href="mailto:joey.a.isaacson@gmail.com" class="bold">joey.a.isaacson@gmail.com</a>
+                        </h4>
+                    </div>
+                    <div class="col-md-5 col-sm-6 hidden-xs">
+                        <img class="iphone-mock-hand img-responsive" src="img/CDV.png">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="main-overview">
-    <div class="main-overview--intro container">
-        <div class="row">
-            <div class="col-sm-7">
-                <h1 class="main-overview--city visible-xs">Brooklyn, NY</h1>
-                <h4 class="main-overview--sub-title">Based in Brooklyn, NY<br>
-                    Available for hire as of 9/12/14<br>
-                    <span class="bold">joey.a.isaacson@gmail.com</span>
-                </h4>
-            </div>
-            <div class="col-sm-5 hidden-xs">
-                <img class="iphone-mock-hand img-responsive" src="img/CDV.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="sub-overview" class="sub-overview">
+<div class="sub-overview">
     <div class="sub-overview--container">
         <div class="container">
             <div class="row">
                 <div class="sub-nav col-xs-12">
                     <ul class="segmented-controls nav">
                         <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home.work' }" ui-sref="home.work">
-                            <span class="hidden-xs">My</span>
-                            Work
+                            My work
                         </li>
                         <li class="segmented-controls--control text-center" ng-class="{'active': location === 'home.about' }" ui-sref="home.about">
-                            About
-                            <span class="hidden-xs">me</span>
+                            About me
                         </li>
                     </ul>
                 </div>
@@ -54,5 +55,5 @@
     </div>
 </div>
 
-<div ui-view="work"></div>
-<div ui-view="about"></div>
+<div class="work-overview" ui-view="work"></div>
+<div class="about" ui-view="about"></div>

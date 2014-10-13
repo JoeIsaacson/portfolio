@@ -1,7 +1,10 @@
-/*  Background-light: #E7ADA5;
-    Background-dark: #EBD0BF
-    Grey: #9B9B9B;
-*/
+/* Animations */
+
+@-webkit-keyframes iphoneMove {
+    from { bottom: -230px; }
+    to { bottom: -205px; }
+}
+
 
 /* BOOTSTRAP OVERRIDES */
 
@@ -118,10 +121,16 @@ hr {
 .footer {
     padding-top: 80px;
     padding-bottom: 40px;
-    margin-top: 100px;
     color: #929090;
     text-align: center;
     border-top: 1px solid #e5e5e5;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.footer--email {
+    color: #929090;
 }
 
 .footer .footer--lead {
@@ -135,28 +144,51 @@ video {
 }
 
 
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 0px;
+    }
+}
+
 /*Custom*/
 
 /*HEADER*/
 
-.header h1 {
+.work-overview,
+.about {
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.header--container {
+    position: relative;
+    z-index: 0;
+}
+
+.header--container h1 {
     font-size: 52px;
 }
 
-.header h2 {
+.header--container h2 {
     font-size: 35px;
     margin-top: 0;
 }
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -165px;
+    bottom: -205px;
+    -webkit-animation: iphoneMove 1s;
+    animation: iphoneMove 1s, iphoneRotate 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    transform: rotate(1deg);
 }
 
 .main-overview--sub-title {
     line-height: 1.5;
     padding-top: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 85px;
 }
 
 .main-overview--city {
@@ -170,52 +202,55 @@ video {
 @media (min-width: 990px) {
 
     .main-overview--sub-title {
-        padding-bottom: 95px;
+        padding-bottom: 35px;
     }
-
-    .main-overview .iphone-mock-hand {
-        position: absolute;
-        bottom: -225px;
-    }
-
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
 
-    .header {
-        margin-top: 0px;
-        padding-top: 190px;
-        position: relative;
-        z-index: 0;
-        color: #C97C70;
-        background-color: #E7ADA5;
+    .header--container {
+        color: #666;
+        background-color: #fff;
     }
-
 }
 
-.main-overview {
+.main-overview a {
     color: #C97C70;
-    background-color: #E7ADA5;
 }
 
 .sub-overview {
     z-index: 1;
+    position: relative;
+    background-color: #fff;
 }
 
 .sub-overview--container {
     min-height: 120px;
     border-bottom: 1px solid #eee;
-    background-color: #fff;
     z-index: 1;
+    position: relative;
 }
 
 @media (min-width: 767px) {
 
-    .fixed {
+    .jumbotron {
+        height: 520px;
+        z-index: -10;
+        position: relative;
+        margin: 0;
+        color: #C97C70;
+        background-color: #E7ADA5;
+    }
+
+    .jumbotron--container {
         position: fixed;
+        top: 0;
         left: 0;
         right: 0;
-        top: 0;
+        color: #C97C70;
+        background-color: #E7ADA5;
+        padding-top: 150px;
+        z-index: -10;
     }
 
     .sub-overview--name {
@@ -235,9 +270,25 @@ video {
         padding: 0;
     }
 
+    .jumbotron {
+        padding: 0;
+    }
+
+    .main-overview--sub-title {
+        padding-bottom: 35px;
+    }
+
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .section.section-top {
+        padding-bottom: 0;
+    }
+
+    .section.section-bottom {
+        padding-top: 0;
     }
 
     .container {
@@ -259,13 +310,16 @@ video {
     }
 
     .header--container {
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+        z-index: 0;
     }
 
     .sub-header--container {
         background-color: #E7ADA5;
         color: #F8F4F4;
-        padding-top: 25px;
+        padding-top: 35px;
         padding-bottom: 35px;
     }
 
@@ -274,8 +328,12 @@ video {
     }
 
     .main-overview {
-        background-color: bisque;
-        color: #777;
+        background-color: #8F5BA1;
+        color: #E7ADA5;
+    }
+
+    .main-overview--sub-title a {
+        color: #E7ADA5;
     }
 
     .main-overview--sub-title {
@@ -336,7 +394,7 @@ video {
 /* CrowdSurge */
 
 .crowdsurge-jumbotron {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 60px;
 }
 
@@ -364,6 +422,10 @@ video {
 }
 
 @media (max-width: 767px) {
+
+    .crowdsurge-jumbotron {
+        padding-top: 40px;
+    }
 
     .crowdsurge-jumbotron--header {
         padding-top: 0px;
