@@ -4,8 +4,7 @@
 angular.module('myApp', [
     'ngRoute',
     'ui.router',
-    'home-controller',
-    'work-controller'
+    'home-controller'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
 
