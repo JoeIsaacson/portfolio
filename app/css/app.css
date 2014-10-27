@@ -27,7 +27,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     font-family: 'Open Sans', sans-serif;
-    font-size: 19px;
+    font-size:  17px;
     line-height: 1.85;
 }
 
@@ -342,6 +342,10 @@ video {
 
 }
 
+.sub-header--container .label {
+    background-color: #C97C70;
+}
+
 .influence .influence--header {
     margin: 20px 0 30px 0;
 }
@@ -376,9 +380,13 @@ video {
 }
 
 .healthyout-jumbotron .logo {
-    width: 60%;
+    width: 70%;
     margin-top: 30%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
+}
+
+.healthyout-overview {
+    padding-top: 150px;
 }
 
 @media (max-width: 767px) {
@@ -389,6 +397,11 @@ video {
     .healthyout-overview {
         padding-top: 60px;
     }
+
+    .wireframe img {
+        margin-top: 15px;
+    }
+
 }
 
 /* CrowdSurge */
@@ -396,10 +409,18 @@ video {
 .crowdsurge-jumbotron {
     padding-top: 100px;
     padding-bottom: 60px;
+    background: #ededed;
+    background: -moz-radial-gradient(bottom, ellipse cover, #ededed 0%, #ffffff 50%);
+    background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 50%, color-stop(0%,#ededed), color-stop(50%,#ffffff));
+    background: -webkit-radial-gradient(bottom, ellipse cover, #ededed 0%,#ffffff 50%);
+    background: -o-radial-gradient(bottom, ellipse cover, #ededed 0%,#ffffff 50%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #ededed 0%,#ffffff 50%);
+    background: radial-gradient(ellipse at bottom, #ededed 0%,#ffffff 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 );
 }
 
 .crowdsurge-jumbotron--header {
-    padding-top: 80px;
+    padding-top: 40px;
     font-size: 60px;
     line-height: 1;
 }
@@ -412,7 +433,7 @@ video {
 @media (max-width: 990px) {
 
     .crowdsurge-jumbotron--header {
-        padding-top: 40px;
+        padding-top: 20px;
         font-size: 40px;
     }
 
@@ -433,6 +454,15 @@ video {
 
 }
 
+.usability-example {
+    padding: 20px 0;
+}
+
+.usability-example--header {
+    padding-top: 0;
+    margin-top: 0;
+}
+
 .crowdsurge-visual-design {
     background-color: #FEEEEE;
 }
@@ -449,4 +479,28 @@ video {
     .crowdsurge-visual-design--image {
         padding: 30px;
     }
+}
+
+.iphone-family {
+    position: relative;
+    z-index: 1;
+}
+
+.gif-container {
+    position: absolute;
+    background-color: red;
+    width: 30%;
+    height: 73.5%;
+    z-index: 0;
+    top: 11%;
+    left: 50%;
+    margin-left: -16%;
+}
+
+.gif-container img {
+    position: absolute;
+    width: 100%;
+    height: 102%;
+    left: 0;
+    top: -1px;
 }
