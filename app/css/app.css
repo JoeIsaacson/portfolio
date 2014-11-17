@@ -485,15 +485,15 @@ video {
 }
 
 .crowdsurge-visual-design {
-    background-color: #FEEEEE;
+    background-color: #F4F5F3;
 }
 
 .crowdsurge-visual-design hr {
-    border-color: #D06371;
+    border-color: #6C6F72;
 }
 
 .crowdsurge-visual-design--header {
-    color: #D06371;
+    /*color: #6C6F72;*/
 }
 
 @media (max-width: 767px) {
