@@ -376,16 +376,38 @@ video {
 .healthyout-jumbotron {
     background-color: #47C965;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
 .healthyout-jumbotron .logo {
     width: 70%;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .healthyout-overview {
     padding-top: 150px;
+}
+
+.work-header--sub-head {
+    padding-top: 27px;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.healthyout-screens {
+    background-color: #F4F5F3;
+}
+
+.screenshot--img {
+    margin: 30px 0 25px 0;
+}
+
+.screenshot--sub-header {
+    font-size: 15px;
+}
+
+.screenshot--icon {
+    margin-top: 10px;
 }
 
 @media (max-width: 767px) {
