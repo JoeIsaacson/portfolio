@@ -137,6 +137,10 @@ hr {
     padding-bottom: 30px;
 }
 
+.footer .footer--icon {
+    margin: 15px 0;
+}
+
 video {
     border-radius: 6px;
     overflow: hidden;
