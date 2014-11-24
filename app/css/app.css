@@ -1,8 +1,8 @@
 /* Animations */
 
 @-webkit-keyframes iphoneMove {
-    from { bottom: -230px; }
-    to { bottom: -205px; }
+    from { bottom: -183px; }
+    to { bottom: -143px; }
 }
 
 
@@ -181,30 +181,45 @@ video {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -205px;
+    bottom: -143px;
     -webkit-animation: iphoneMove 1s;
-    animation: iphoneMove 1s, iphoneRotate 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    transform: rotate(1deg);
+    animation: iphoneMove 1s;
+    right: -10px;
+}
+
+@media (max-width: 1090px) {
+    .main-overview .iphone-mock-hand {
+        position: absolute;
+        bottom: -133px;
+        -webkit-animation: iphoneMove 1s;
+        animation: iphoneMove 1s, iphoneRotate 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        transform: rotate(1deg);
+        right: -60px;
+    }
 }
 
 .main-overview--sub-title {
     line-height: 1.5;
-    padding-top: 30px;
+    padding-top: 0;
+    margin-top: 0;
     padding-bottom: 85px;
 }
 
-.main-overview--city {
+.main-overview--intro {
     padding-top: 30px;
+}
+
+.main-overview--title,
+.main-overview--city {
     line-height: 1.5;
-    font-size: 52px;
+    font-size: 42px;
     margin-bottom: -10px;
     margin-top: 0;
 }
 
 @media (min-width: 990px) {
-
     .main-overview--sub-title {
         padding-bottom: 35px;
     }
@@ -235,8 +250,43 @@ video {
     position: relative;
 }
 
+.jumbotron p {
+    font-size: inherit;
+}
+
 @media (min-width: 767px) {
 
+    .jumbotron {
+        height: 474px;
+        z-index: -10;
+        position: relative;
+        margin: 0;
+        color: #C97C70;
+        background-color: #E7ADA5;
+    }
+
+    .jumbotron--container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: #C97C70;
+        background-color: #E7ADA5;
+        padding-top: 120px;
+        z-index: -10;
+    }
+
+    .sub-overview--name {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        max-height: 30px !important;
+        line-height: 1.1;
+    }
+}
+
+@media (min-width: 990px) {
     .jumbotron {
         height: 520px;
         z-index: -10;
@@ -256,17 +306,7 @@ video {
         padding-top: 150px;
         z-index: -10;
     }
-
-    .sub-overview--name {
-        height: 0;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        max-height: 30px !important;
-        line-height: 1.1;
-    }
 }
-
 
 @media (max-width: 767px) {
 
