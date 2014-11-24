@@ -425,7 +425,7 @@ video {
 
 .healthyout-jumbotron .logo {
     width: 70%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .healthyout-overview {
@@ -434,6 +434,7 @@ video {
 
 .work-header--sub-head {
     padding-top: 27px;
+    padding-bottom: 20px;
     font-size: 23px;
     line-height: 1.5;
 }
