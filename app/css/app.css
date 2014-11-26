@@ -156,6 +156,7 @@ video {
 
 /*Custom*/
 
+
 /*HEADER*/
 
 .work-overview,
@@ -468,6 +469,12 @@ video {
         margin-top: 15px;
     }
 
+}
+
+/* Other */
+
+.body-content {
+    background-color: #fff;
 }
 
 /* CrowdSurge */

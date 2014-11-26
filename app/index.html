@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Joey Isaacson</title>
+        <title>Joey Isaacson | Product Designer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,15 +22,224 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/app.css"/>
-        <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
     <body>
-        <div ui-view autoscroll="true"></div>
-        <div ng-include="'views/common/_footer.tpl.html'"></div>
+        <div class="jumbotron">
+            <div class="jumbotron--container">
+                <div class="header--container container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1>Joey Isaacson</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-header--container container">
+                    <h1 class="main-overview--title visible-xs">Product Designer and Developer</h1>
+                    <div class="row">
+                        <div class="col-sm-8 hidden-xs">
+                            <h3>Product Designer and Developer</h3>
+                            <span class="label">UX</span>
+                            <span class="label">Usability Testing</span>
+                            <span class="label">Wireframing</span>
+                            <span class="label">Visual Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-overview">
+                    <div class="main-overview--intro container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h1 class="main-overview--city visible-xs">Brooklyn, NY</h1>
+                                <p class="main-overview--sub-title visible-xs">
+                                    Reach me at<br>
+                                    <a href="mailto:joey.a.isaacson@gmail.com" class="bold">joey.a.isaacson@gmail.com</a>
+                                </p>
+                                <h4 class="main-overview--sub-title hidden-xs">
+                                    <span class="hidden-xs">Based in Brooklyn, NY</span>
+                                    <br>
+                                    <a href="mailto:joey.a.isaacson@gmail.com" class="bold">joey.a.isaacson@gmail.com</a>
+                                </h4>
+                            </div>
+                            <div class="col-md-5 col-sm-6 hidden-xs">
+                                <img class="iphone-mock-hand img-responsive" src="img/CDV.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-overview">
+            <div class="sub-overview--container">
+                <div class="container">
+                    <div class="row">
+                        <div class="sub-nav col-xs-12">
+                            <ul class="segmented-controls nav">
+                                <li id="work-control" class="segmented-controls--control text-center active" onClick="changeContent('work')">
+                                    My work
+                                </li>
+                                <li id="about-control" class="segmented-controls--control text-center" onClick="changeContent('about')">
+                                    About me
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main Body-->
+
+        <div class="body-content">
+            <div id="work-overview" class="container">
+                <div class="section row">
+                    <div class="col-md-4 col-sm-5">
+                        <img src="img/crowdsurge/iPhone-6-mock-crowdsurge.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-sm-offset-1">
+                        <h1>CrowdSurge</h1>
+                        <h3 class="light">Product Designer and Front-End Developer</h3>
+                        <h3 class="light"><small>(October 2013 to Present)</small></h3>
+                        <hr>
+                        <p class="overview-paragraph">Improved the ticket buying experience for the fans of Arcade Fire, Paul McCartney, Kendrick Lamar and many more.</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="btn btn-primary btn-block" href="work/crowdsurge.html">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section row">
+                    <div class="col-sm-7 hidden-xs">
+                        <h1>HealthyOut iOS App</h1>
+                        <h3 class="light">Product Designer</h3>
+                        <h3 class="light"><small>(August 2011 to September 2013)</small></h3>
+                        <hr>
+                        <p class="overview-paragraph">I helped bring a concept to life and to the 10 food apps list of the iTunes AppStore. With HealthyOut you can create your own, flexible healthy diet by searching local restaurant dishes.</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="btn btn-primary btn-block" href="work/healthyout.html">View</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a class="btn btn-default btn-block" href="https://itunes.apple.com/us/app/healthyout-free-restaurant/id566409966?mt=8" target="blank">Apple Store</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-1 col-sm-5">
+                        <img src="img/healthyout/healthyOut-iPhone-small.png" class="img-responsive">
+                    </div>
+
+                    <div class="col-sm-7 visible-xs">
+                        <h1>HealthyOut iOS App</h1>
+                        <p class="overview-paragraph">I helped bring a concept to life and to the 10 food apps list of the iTunes AppStore. With HealthyOut you can create your own, flexible healthy diet by searching local restaurant dishes.</p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a class="btn btn-primary btn-block" href="work/healthyout.html">View</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a class="btn btn-default btn-block" href="https://itunes.apple.com/us/app/healthyout-free-restaurant/id566409966?mt=8">App Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--About Me Overview-->
+            <div id="about-overview" class="container hidden">
+                <div class="self-description-mobile section section-top text-center row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h2>About Me</h2>
+                        <br class="visible-xs">
+                        <h4 class="lead text-center">Product Designer with 2.5+ years of digital hustling.</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 section">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <img class="img-circle img-responsive" src="img/icons/profile.jpg"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lead">Both designer and front-end developer, I have a strong technical background that allows me to quickly create and test both native and web-based prototypes.</p>
+                    </div>
+                </div>
+
+                <div class="influence row section section-top">
+                    <div class="col-sm-6 section text-center">
+                        <h3 class="influence--header">Things I have written</h3>
+                        <ul class="list-unstyled bordered-bottom">
+                            <li>
+                                <a href="https://medium.com/@joey_isaacson/ogilvy-on-ux-40caa739ea7a" target="blank">Ogilvy on UX</a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@joey_isaacson/creating-an-agile-design-process-1b68b0e11bfe" target="blank">Creating an Agile Design Process</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 section text-center">
+                        <h3 class="influence--header">Influencers</h3>
+                        <ul class="list-unstyled bordered-bottom">
+                            <li>
+                                <a href="http://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652" target="blank">Lean UX</a>
+                                <small>by Jeff Gothelf</small>
+                            </li>
+                            <li>
+                                <a href="http://www.amazon.com/Prototyping-Todd-Zaki-Warfel-ebook/dp/B004VFUOMY/ref=sr_1_1?s=books&ie=UTF8&qid=1413056474&sr=1-1&keywords=todd+zaki+warfel" target="blank">Prototyping</a>
+                                <small>Todd Zaki Warfel</small>
+                            </li>
+                            <li>
+                                <a href="http://52weeksofux.com/" target="blank">52 Weeks of UX</a>
+                                <small>by Joshua Porter, Joshua Brewer</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <p class="footer--lead">Always feel free to reach me at
+                    <a class="footer--email bold" href="mailto:joey.a.isaacson@gmail.com" class="bold">joey.a.isaacson@gmail.com</a>
+                </p>
+
+                <hr>
+
+                <div class="footer--links section row">
+                    <div class="col-sm-4">
+                        <i class="footer--icon fa fa-twitter fa-2x"></i>
+                        <p>Follow me <a href="https://twitter.com/Joey_Isaacson" target="blank" >@joey</a><p>
+                    </div>
+                    <br class="visible-xs">
+                    <div class="col-sm-4">
+                        <i class="footer--icon fa fa-linkedin fa-2x"></i>
+                        <p>
+                            <a href="https://www.linkedin.com/profile/view?id=66445229" target="blank" >Connect with me</a>
+                        </p>
+                    </div>
+                    <br class="visible-xs">
+                    <div class="col-sm-4">
+                        <i class="footer--icon fa fa-github fa-2x"></i>
+                        <p>
+                            <a href="https://github.com/joeisaacson" target="blank">View the goods</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!--Google Analytics -->
 
@@ -44,10 +253,4 @@
         ga('send', 'pageview');
     </script>
 
-    <!--ANGULAR LOCAL-->
-    <!--<script src="bower_components/angular/angular.js"></script>-->
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="views/home/home-controller.js"></script>
-    <script src="app.js"></script>
 </html>
