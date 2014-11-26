@@ -1,6 +1,6 @@
 function changeContent(selectedTab) {
     if (selectedTab === 'work') {
-=        $('#about-control').removeClass('active');
+        $('#about-control').removeClass('active');
         $('#work-control').addClass('active');
         /* Change Body Content */
         $('#work-overview').removeClass('hidden');

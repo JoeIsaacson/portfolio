@@ -191,7 +191,7 @@ video {
 @media (max-width: 1090px) {
     .main-overview .iphone-mock-hand {
         position: absolute;
-        bottom: -133px;
+        bottom: -143px;
         -webkit-animation: iphoneMove 1s;
         animation: iphoneMove 1s, iphoneRotate 1s;
         -webkit-animation-timing-function: ease-in-out;
