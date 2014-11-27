@@ -108,8 +108,19 @@ small,
 }
 
 .section .overview-paragraph {
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .section .overview-paragraph {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .overview-img  {
+        margin: 20px 0;
+    }
 }
 
 .segmented-controls {
@@ -163,12 +174,6 @@ video {
 }
 
 
-@media (max-width: 768px) {
-    .footer {
-        margin-top: 0px;
-    }
-}
-
 /*Custom*/
 
 
@@ -210,6 +215,9 @@ video {
     -webkit-animation: iphoneMove 1s;
     animation: iphoneMove 1s;
     right: -10px;
+    -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
 }
 
 @media (max-width: 1090px) {
@@ -223,6 +231,21 @@ video {
         right: -60px;
     }
 }
+
+@media (max-width: 420px) {
+    .iphone-mock-hand-mobile {
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: -35px;
+    }
+}
+
+@media (min-width: 420px) {
+    .iphone-mock-hand-mobile {
+        display: none;
+    }
+}
+
 
 .main-overview--sub-title {
     line-height: 1.5;
@@ -389,6 +412,7 @@ video {
         color: #F8F4F4;
         padding-top: 35px;
         padding-bottom: 35px;
+        overflow: hidden;
     }
 
     .sub-header--container h2 {
@@ -442,8 +466,8 @@ video {
 /* HEALTHYOUT */
 
 .healthyout-jumbotron {
-    background-color: #47C965;
-    color: #fff;
+    background-color: #F5F5F5;
+    color: #47C965;
     padding-top: 90px;
 }
 
@@ -456,17 +480,22 @@ video {
     padding-top: 150px;
 }
 
+.work-header--head {
+    font-family: 'Gotham Rounded';
+    font-weight: 300;
+    font-size: 55px;
+    padding-top: 25px;    
+}
+
 .work-header--sub-head {
-    padding-top: 27px;
     padding-bottom: 20px;
-    font-size: 23px;
     line-height: 1.5;
     font-family: 'Gotham Rounded';
     font-weight: 300;
 }
 
 .healthyout-screens {
-    background-color: #F4F5F3;
+    background-color: #F5F5F5;
 }
 
 .screenshot--header {
@@ -507,7 +536,16 @@ video {
 
 .body-content {
     background-color: #fff;
+    padding-bottom: 40px;
 }
+
+.work-overview .center-divide {
+    margin-top: 0;
+}
+
+/*.work-overview .work-overview--main-image img {
+    padding: 0 20px;
+}*/
 
 /* CrowdSurge */
 
