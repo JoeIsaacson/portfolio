@@ -2,7 +2,7 @@
 
 @-webkit-keyframes iphoneMove {
     from { bottom: -183px; }
-    to { bottom: -143px; }
+    to { bottom: -153px; }
 }
 
 
@@ -37,10 +37,10 @@ body a {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
+    font-weight: bold;
 }
 
 .lead {
@@ -50,6 +50,16 @@ h4 {
 
 hr {
     border-width: 5px;
+}
+
+.label {
+    font-weight: normal;
+}
+
+.label-default {
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #EEE;
 }
 
 /*Components*/
@@ -79,8 +89,9 @@ hr {
     font-weight: bold;
 }
 
+small,
 .light {
-    color: #7f7f7f;
+    color: #888;
 }
 
 .section {
@@ -98,7 +109,7 @@ hr {
 
 .section .overview-paragraph {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .segmented-controls {
@@ -119,14 +130,17 @@ hr {
 }
 
 .footer {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 60px;
     color: #929090;
     text-align: center;
-    border-top: 1px solid #e5e5e5;
-    background-color: #fff;
+    background-color: #FBFBFB;
     position: relative;
     z-index: 1;
+}
+
+.footer--links {
+    padding: 40px 0;
 }
 
 .footer--email {
@@ -134,7 +148,8 @@ hr {
 }
 
 .footer .footer--lead {
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 45px;
 }
 
 .footer .footer--icon {
@@ -166,6 +181,15 @@ video {
     position: relative;
 }
 
+.work-overview--header {
+    margin: 0;
+}
+
+.work-overview--sub-header {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .header--container {
     position: relative;
     z-index: 0;
@@ -182,7 +206,7 @@ video {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -143px;
+    bottom: -153px;
     -webkit-animation: iphoneMove 1s;
     animation: iphoneMove 1s;
     right: -10px;
@@ -191,7 +215,6 @@ video {
 @media (max-width: 1090px) {
     .main-overview .iphone-mock-hand {
         position: absolute;
-        bottom: -143px;
         -webkit-animation: iphoneMove 1s;
         animation: iphoneMove 1s, iphoneRotate 1s;
         -webkit-animation-timing-function: ease-in-out;
@@ -425,7 +448,7 @@ video {
 }
 
 .healthyout-jumbotron .logo {
-    width: 70%;
+    width: 80%;
     margin-top: 10%;
 }
 
@@ -438,10 +461,16 @@ video {
     padding-bottom: 20px;
     font-size: 23px;
     line-height: 1.5;
+    font-family: 'Gotham Rounded';
+    font-weight: 300;
 }
 
 .healthyout-screens {
     background-color: #F4F5F3;
+}
+
+.screenshot--header {
+    min-height: 66px;
 }
 
 .screenshot--img {
@@ -453,7 +482,7 @@ video {
 }
 
 .screenshot--icon {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -468,7 +497,10 @@ video {
     .wireframe img {
         margin-top: 15px;
     }
+}
 
+.healthyout-wireframes .wireframe-row {
+    padding-top: 30px;
 }
 
 /* Other */
