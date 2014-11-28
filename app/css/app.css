@@ -5,6 +5,19 @@
     to { bottom: -153px; }
 }
 
+/* Fonts */
+
+@font-face {
+    font-family: 'Gotham Rounded Light';
+    src: url("../fonts/gotham-rounded-light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham Rounded Medium';
+    src: url("../fonts/gotham-rounded-medium.otf") format("opentype");
+}
+
+
 
 /* BOOTSTRAP OVERRIDES */
 
@@ -481,16 +494,21 @@ video {
 }
 
 .work-header--head {
-    font-family: 'Gotham Rounded';
+    font-family: 'Gotham Rounded Light';
     font-weight: 300;
-    font-size: 55px;
-    padding-top: 25px;    
+    padding-top: 25px;
+}
+
+@media (min-width: 767px) {
+    .work-header--head {
+        font-size: 55px;
+    }
 }
 
 .work-header--sub-head {
     padding-bottom: 20px;
     line-height: 1.5;
-    font-family: 'Gotham Rounded';
+    font-family: 'Gotham Rounded Light';
     font-weight: 300;
 }
 
