@@ -46,7 +46,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     font-family: 'Open Sans', sans-serif;
-    font-size:  16px;
+    font-size:  15px;
     line-height: 1.85;
 }
 
@@ -62,8 +62,15 @@ h3 {
     font-weight: bold;
 }
 
+
+
+@media (min-width: 767px) {
+    .lead {
+        font-size: 22px;
+    }
+}
+
 .lead {
-    font-size: 22px;
     line-height: 1.95;
 }
 
@@ -93,6 +100,7 @@ hr {
 .navbar-nav>li>a {
     padding: 5px 10px;
     margin: 10px 0;
+    color: inherit;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -100,6 +108,16 @@ hr {
 .navbar-default .navbar-nav>.active>a:focus {
     background-color: transparent;
     font-weight: 600;
+    color: inherit;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: inherit;
+}
+
+
+.navbar-default .navbar-brand {
+    color: inherit;
 }
 
 /*Components*/
@@ -517,8 +535,13 @@ video {
 .healthyout-jumbotron {
     background-color: #47C965;
     color: #FFF;
-    padding-top: 90px;
+    padding-top: 20px;
 }
+
+.healthyout-jumbotron .navbar-nav>li>a:hover {
+    color: #1B6215;
+}
+
 
 .healthyout-jumbotron .logo {
     width: 80%;
@@ -598,9 +621,13 @@ video {
 
 /* CrowdSurge */
 
+.crowdsurge-jumbotron {
+    padding-top: 20px;
+}
+
 .crowdsurge-jumbotron--header {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     font-size: 60px;
     line-height: 1;
 }
