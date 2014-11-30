@@ -24,8 +24,34 @@
     </head>
 
     <body>
+
         <div class="jumbotron">
             <div class="jumbotron--container">
+
+                <nav class="navbar navbar-default hidden-xs">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Joey Isaacson</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active">
+                                    <a href="#work-overview">Work</a>
+                                </li>
+                                <li><a href="#about-overview">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
                 <div class="header--container container">
                     <div class="row">
                         <div class="col-sm-8">
@@ -62,17 +88,107 @@
             </div>
         </div>
 
-        <div class="sub-overview">
-            <div class="sub-overview--container">
-                <div class="container">
-                    <div class="row">
-                        <div class="sub-nav col-xs-12">
-                            <ul class="segmented-controls nav">
-                                <li id="work-control" class="segmented-controls--control text-center active" onClick="changeContent('work')">
-                                    My work
+        <div class="body-content">
+            <div class="container">
+                <div id="work-overview" class="work-overview">
+                    <div class="work-overview__crowdsurge section section-top row">
+                        <div class="col-md-4 col-sm-5 hidden-xs work-overview--main-image">
+                            <img src="img/crowdsurge/iPhone-6-mock-crowdsurge.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-7 col-md-offset-1">
+                            <h1 class="work-overview--header">CrowdSurge</h1>
+                            <h3 class="work-overview--sub-header light">Product Designer and Front-End Developer</h3>
+                            <hr>
+                            <span class="label label-default">UX</span>
+                            <span class="label label-default">Usability Testing</span>
+                            <span class="label label-default">Wireframing</span>
+                            <span class="label label-default">Prototyping</span>
+                            <span class="label label-default">Front-End Development</span>
+                            <img class="overview-img img-responsive visible-xs" src="img/crowdsurge/iPhone-6-mock-crowdsurge.png">
+                            <p class="overview-paragraph">Helping our clients such as Arcade Fire, Paul McCartney, Kendrick Lamar sell their tickets directly from their site. As lead designer of the global platform re-design, we reimagined the experience from the ground up.</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="btn btn-primary btn-block" href="crowdsurge.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="visible-xs center-divide">
+
+                    <div class="section row">
+                        <div class="col-sm-6">
+                            <h1 class="work-overview--header">HealthyOut iOS App</h1>
+                            <h3 class="work-overview--sub-header light">Product Designer</h3>
+                            <hr>
+                            <span class="label label-default">UX</span>
+                            <span class="label label-default">Usability Testing</span>
+                            <span class="label label-default">Wireframing</span>
+                            <span class="label label-default">Visual Design</span>
+                            <img class="overview-img img-responsive visible-xs" src="img/healthyout/iPhone_overview_1.jpg">
+                            <p class="overview-paragraph">I helped bring a concept to life and to the 10 food apps list of the iTunes AppStore. With HealthyOut you can create your own, flexible healthy diet by searching local restaurant dishes.</p>
+                            <a class="btn btn-default" href="https://itunes.apple.com/us/app/healthyout-free-restaurant/id566409966?mt=8" target="blank">Apple Store</a>
+                            <a class="btn btn-primary" href="healthyout.html">Learn More</a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-offset-1 col-md-offset-1 col-sm-5 hidden-xs">
+                            <img class="overview-img img-responsive" src="img/healthyout/iPhone_overview_1.jpg">
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--About Me Overview-->
+                <div id="about-overview">
+                    <div class="self-description-mobile section section-top text-center row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h1>About Me</h2>
+                            <br class="visible-xs">
+                            <h4 class="lead text-center">Product Designer with 2.5+ years of digital hustling.</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 section">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <img class="img-circle img-responsive" src="img/icons/profile.jpg"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lead bold text-left">Both designer and front-end developer, I have the ability to turn concepts to reality. My focus is in web based and native mobile applications because of the integral role that they can play in someone’s daily life.</p>
+                            <br>
+                            <p class="lead text-left">Since the first project I was a part of was drafted into TechStars, I have pursued Product Design to help people get things done by improving the digital experiences in their life. For me the design process is the route to the solution, not just a deliverable product. I take a lean approach to get to the right answers through guerrilla usability testing of multiple concepts. Being able to move quickly with a small team, prototype and build out these concepts allows me to gather real feedback beyond clickable image mocks.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="influence row section section-top">
+                        <div class="col-sm-6 section text-center">
+                            <h3 class="influence--header">Things I have written</h3>
+                            <ul class="list-unstyled bordered-bottom">
+                                <li>
+                                    <a href="https://medium.com/@joey_isaacson/ogilvy-on-ux-40caa739ea7a" target="blank">Ogilvy on UX</a>
                                 </li>
-                                <li id="about-control" class="segmented-controls--control text-center" onClick="changeContent('about')">
-                                    About me
+                                <li>
+                                    <a href="https://medium.com/@joey_isaacson/creating-an-agile-design-process-1b68b0e11bfe" target="blank">Creating an Agile Design Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 section text-center">
+                            <h3 class="influence--header">Influencers</h3>
+                            <ul class="list-unstyled bordered-bottom">
+                                <li>
+                                    <a href="http://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652" target="blank">Lean UX</a>
+                                    <small>by Jeff Gothelf</small>
+                                </li>
+                                <li>
+                                    <a href="http://www.amazon.com/Prototyping-Todd-Zaki-Warfel-ebook/dp/B004VFUOMY/ref=sr_1_1?s=books&ie=UTF8&qid=1413056474&sr=1-1&keywords=todd+zaki+warfel" target="blank">Prototyping</a>
+                                    <small>Todd Zaki Warfel</small>
+                                </li>
+                                <li>
+                                    <a href="http://52weeksofux.com/" target="blank">52 Weeks of UX</a>
+                                    <small>by Joshua Porter, Joshua Brewer</small>
                                 </li>
                             </ul>
                         </div>
@@ -81,114 +197,8 @@
             </div>
         </div>
 
-        <!--Main Body-->
-
-        <div class="body-content">
-            <div id="work-overview" class="work-overview container">
-                <div class="work-overview__crowdsurge section section-top row">
-                    <div class="col-md-4 col-sm-5 hidden-xs work-overview--main-image">
-                        <img src="img/crowdsurge/iPhone-6-mock-crowdsurge.jpg" class="img-responsive">
-                    </div>
-                    <div class="col-sm-7 col-md-offset-1">
-                        <h1 class="work-overview--header">CrowdSurge</h1>
-                        <h3 class="work-overview--sub-header light">Product Designer and Front-End Developer</h3>
-                        <hr>
-                        <span class="label label-default">UX</span>
-                        <span class="label label-default">Usability Testing</span>
-                        <span class="label label-default">Wireframing</span>
-                        <span class="label label-default">Prototyping</span>
-                        <span class="label label-default">Front-End Development</span>
-                        <img class="overview-img img-responsive visible-xs" src="img/crowdsurge/iPhone-6-mock-crowdsurge.png">
-                        <p class="overview-paragraph">Helping our clients such as Arcade Fire, Paul McCartney, Kendrick Lamar sell their tickets directly from their site. As lead designer of the global platform re-design, we reimagined the experience from the ground up.</p>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <a class="btn btn-primary btn-block" href="crowdsurge.html">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="visible-xs center-divide">
-
-                <div class="section row">
-                    <div class="col-sm-6">
-                        <h1 class="work-overview--header">HealthyOut iOS App</h1>
-                        <h3 class="work-overview--sub-header light">Product Designer</h3>
-                        <hr>
-                        <span class="label label-default">UX</span>
-                        <span class="label label-default">Usability Testing</span>
-                        <span class="label label-default">Wireframing</span>
-                        <span class="label label-default">Visual Design</span>
-                        <img class="overview-img img-responsive visible-xs" src="img/healthyout/iPhone_overview_1.jpg">
-                        <p class="overview-paragraph">I helped bring a concept to life and to the 10 food apps list of the iTunes AppStore. With HealthyOut you can create your own, flexible healthy diet by searching local restaurant dishes.</p>
-                        <a class="btn btn-default" href="https://itunes.apple.com/us/app/healthyout-free-restaurant/id566409966?mt=8" target="blank">Apple Store</a>
-                        <a class="btn btn-primary" href="healthyout.html">Learn More</a>
-                    </div>
-
-                    <div class="col-md-4 col-sm-offset-1 col-md-offset-1 col-sm-5 hidden-xs">
-                        <img class="overview-img img-responsive" src="img/healthyout/iPhone_overview_1.jpg">
-                    </div>
-
-                </div>
-            </div>
-
-            <!--About Me Overview-->
-            <div id="about-overview" class="container hidden">
-                <div class="self-description-mobile section section-top text-center row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h1>About Me</h2>
-                        <br class="visible-xs">
-                        <h4 class="lead text-center">Product Designer with 2.5+ years of digital hustling.</h4>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 section">
-                                <div class="row">
-                                    <div class="col-sm-8 col-sm-offset-2">
-                                        <img class="img-circle img-responsive" src="img/icons/profile.jpg"></img>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="lead bold text-left">Both designer and front-end developer, I have the ability to turn concepts to reality. My focus is in web based and native mobile applications because of the integral role that they can play in someone’s daily life.</p>
-                        <br>
-                        <p class="lead text-left">Since the first project I was a part of was drafted into TechStars, I have pursued Product Design to help people get things done by improving the digital experiences in their life. For me the design process is the route to the solution, not just a deliverable product. I take a lean approach to get to the right answers through guerrilla usability testing of multiple concepts. Being able to move quickly with a small team, prototype and build out these concepts allows me to gather real feedback beyond clickable image mocks.</p>
-                    </div>
-                </div>
-
-                <div class="influence row section section-top">
-                    <div class="col-sm-6 section text-center">
-                        <h3 class="influence--header">Things I have written</h3>
-                        <ul class="list-unstyled bordered-bottom">
-                            <li>
-                                <a href="https://medium.com/@joey_isaacson/ogilvy-on-ux-40caa739ea7a" target="blank">Ogilvy on UX</a>
-                            </li>
-                            <li>
-                                <a href="https://medium.com/@joey_isaacson/creating-an-agile-design-process-1b68b0e11bfe" target="blank">Creating an Agile Design Process</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 section text-center">
-                        <h3 class="influence--header">Influencers</h3>
-                        <ul class="list-unstyled bordered-bottom">
-                            <li>
-                                <a href="http://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652" target="blank">Lean UX</a>
-                                <small>by Jeff Gothelf</small>
-                            </li>
-                            <li>
-                                <a href="http://www.amazon.com/Prototyping-Todd-Zaki-Warfel-ebook/dp/B004VFUOMY/ref=sr_1_1?s=books&ie=UTF8&qid=1413056474&sr=1-1&keywords=todd+zaki+warfel" target="blank">Prototyping</a>
-                                <small>Todd Zaki Warfel</small>
-                            </li>
-                            <li>
-                                <a href="http://52weeksofux.com/" target="blank">52 Weeks of UX</a>
-                                <small>by Joshua Porter, Joshua Brewer</small>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!--Footer-->
-        <footer class="footer text-center">
+        <footer id="contact" class="footer text-center">
             <div class="container">
                 <p class="footer--lead">Always feel free to reach me at
                     <a class="footer--email bold" href="mailto:joey.a.isaacson@gmail.com" class="bold">joey.a.isaacson@gmail.com</a>

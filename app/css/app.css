@@ -1,8 +1,8 @@
 /* Animations */
 
 @-webkit-keyframes iphoneMove {
-    from { bottom: -300px; }
-    to { bottom: -200px; }
+    from { bottom: -220px; }
+    to { bottom: -140px; }
 }
 
 @-webkit-keyframes jumbotronMove {
@@ -46,7 +46,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     font-family: 'Open Sans', sans-serif;
-    font-size:  17px;
+    font-size:  16px;
     line-height: 1.85;
 }
 
@@ -83,6 +83,23 @@ hr {
     background-color: #fff;
     color: #666;
     border: 1px solid #EEE;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-nav>li>a {
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    font-weight: 600;
 }
 
 /*Components*/
@@ -245,8 +262,8 @@ video {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -200px;
-    right: -20px;
+    bottom: -140px;
+    right: -70px;
     -webkit-animation: iphoneMove 1s;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
@@ -322,14 +339,6 @@ video {
     background-color: #fff;
 }
 
-.sub-overview--container {
-    min-height: 120px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    z-index: 1;
-    position: relative;
-}
-
 .jumbotron p {
     font-size: inherit;
 }
@@ -338,7 +347,7 @@ video {
 
     .jumbotron {
         height: 474px;
-        z-index: -10;
+        z-index: 0;
         position: relative;
         margin: 0;
         background-color: #F3F2F0;
@@ -349,11 +358,15 @@ video {
         top: 0;
         left: 0;
         right: 0;
-        padding-top: 120px;
-        z-index: -10;
+        padding-top: 20px;
+        z-index: 0;
         -webkit-animation: jumbotronMove 1s;
         -webkit-animation-timing-function: ease-in-out;
         animation-timing-function: ease-in-out;
+    }
+
+    .navbar-default {
+        margin-bottom: 100px;
     }
 
     .sub-overview--name {
@@ -363,14 +376,14 @@ video {
         padding: 0;
         max-height: 30px !important;
         line-height: 1.1;
-        padding-top: 150px;
+        padding-top: 210px;
     }
 }
 
 @media (min-width: 990px) {
     .jumbotron {
-        height: 520px;
-        z-index: -10;
+        height: 526px;
+        z-index: 0;
         position: relative;
         margin: 0;
     }
@@ -380,10 +393,14 @@ video {
         top: 0;
         left: 0;
         right: 0;
-        z-index: -10;
+        z-index: 0;
         -webkit-animation: jumbotronMove 1s;
         -webkit-animation-timing-function: ease-in-out;
         animation-timing-function: ease-in-out;
+    }
+
+    .navbar-default {
+        margin-bottom: 120px;
     }
 }
 
@@ -574,6 +591,8 @@ video {
 .body-content {
     background-color: #fff;
     padding-bottom: 40px;
+    border-top: 1px solid #eee;
+    position: relative;
 }
 
 
@@ -581,6 +600,7 @@ video {
 
 .crowdsurge-jumbotron--header {
     padding-top: 40px;
+    padding-bottom: 40px;
     font-size: 60px;
     line-height: 1;
 }
@@ -592,7 +612,11 @@ video {
 
 
 .crowdsurge-jumbotron--sub-header {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+}
+
+.crowdsurge-jumbotron--lead {
+    margin-bottom: 120px;
 }
 
 @media (max-width: 767px) {
@@ -625,6 +649,10 @@ video {
     .crowdsurge-visual-design--image {
         padding: 30px;
     }
+}
+
+.iphone-family-container {
+    margin-bottom: 100px;
 }
 
 .iphone-family {
