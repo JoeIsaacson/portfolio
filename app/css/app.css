@@ -1,9 +1,15 @@
 /* Animations */
 
 @-webkit-keyframes iphoneMove {
-    from { bottom: -200px; }
-    to { bottom: -173px; }
+    from { bottom: -300px; }
+    to { bottom: -200px; }
 }
+
+@-webkit-keyframes jumbotronMove {
+    from { top: -30px; }
+    to { top: 0px; }
+}
+
 
 /* Fonts */
 
@@ -235,17 +241,17 @@ video {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -173px;
-    right: -10px;
+    bottom: -200px;
+    right: -20px;
+    -webkit-animation: iphoneMove 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
 }
 
-@media (max-width: 1090px) {
+@media (min-width: 1090px) {
     .main-overview .iphone-mock-hand {
         position: absolute;
         right: -60px;
-        -webkit-animation: iphoneMove 1s;
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out;
     }
 }
 
@@ -341,6 +347,9 @@ video {
         right: 0;
         padding-top: 120px;
         z-index: -10;
+        -webkit-animation: jumbotronMove 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
     }
 
     .sub-overview--name {
@@ -350,6 +359,7 @@ video {
         padding: 0;
         max-height: 30px !important;
         line-height: 1.1;
+        padding-top: 150px;
     }
 }
 
@@ -366,8 +376,10 @@ video {
         top: 0;
         left: 0;
         right: 0;
-        padding-top: 150px;
         z-index: -10;
+        -webkit-animation: jumbotronMove 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
     }
 }
 
