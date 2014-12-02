@@ -62,6 +62,13 @@ h3 {
     font-weight: bold;
 }
 
+@media (max-width: 767px) {
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+}
 
 
 @media (min-width: 767px) {
@@ -230,7 +237,6 @@ small,
 video {
     border-radius: 6px;
     overflow: hidden;
-    margin-top: 30px;
 }
 
 .center-divide {
@@ -580,7 +586,8 @@ video {
 }
 
 .screenshot--img {
-    margin: 30px 0 25px 0;
+    margin: 20px 0 15px 0;
+    border: 1px solid #eee;
 }
 
 .screenshot--sub-header {
@@ -632,11 +639,35 @@ video {
     line-height: 1;
 }
 
-.crowdsurge-work .video-embed-conatiner {
+.video-embed-conatiner {
+    margin: 10px 0;
     border-radius: 8px;
     overflow: hidden;
 }
 
+.video-embed-conatiner iframe {
+    margin: 0px 0;
+}
+
+.selling-pint--animated-gif h3 {
+    margin-top: 0;
+}
+
+.selling-point--animation-container {
+    width: 90%;
+    margin: 20px auto;
+    z-index: 1;
+    position: relative;
+}
+
+.selling-point--animation-gif {
+    width: 65%;
+    position: absolute;
+    z-index: 0;
+    top: 82px;
+    left: 50%;
+    margin-left: -100px;
+}
 
 .crowdsurge-jumbotron--sub-header {
     padding-bottom: 60px;
@@ -679,7 +710,13 @@ video {
 }
 
 .iphone-family-container {
-    margin-bottom: 100px;
+    margin: 30px 0;
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+    .iphone-family-container {
+        margin-top: 80px;
+    }
 }
 
 .iphone-family {
