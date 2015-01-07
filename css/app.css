@@ -257,6 +257,10 @@ video {
     .work-overview__crowdsurge {
         border-bottom: 4px solid #eee;
     }
+
+    .work-overview__crowdsurge .btn {
+        margin-bottom: 33px;
+    }
 }
 
 .work-overview--header {
