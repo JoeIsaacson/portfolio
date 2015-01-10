@@ -38,6 +38,11 @@
     }
 }
 
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
 body {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -250,6 +255,12 @@ video {
     background-color: #fff;
     z-index: 1;
     position: relative;
+}
+
+@media (min-width: 767px) {
+    .kendrick--header {
+        margin-bottom: 100px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -631,10 +642,18 @@ video {
 
 .crowdsurge-jumbotron {
     padding-top: 20px;
+    padding-bottom: 0;
+    background: #ededed; /* Old browsers */
+    background: -moz-radial-gradient(bottom, ellipse cover,  #ededed 0%, #ffffff 50%); /* FF3.6+ */
+    background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 50%, color-stop(0%,#ededed), color-stop(50%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Opera 12+ */
+    background: -ms-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* IE10+ */
+    background: radial-gradient(ellipse at bottom,  #ededed 0%,#ffffff 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .crowdsurge-jumbotron--header {
-    padding-top: 40px;
     padding-bottom: 30px;
     font-size: 60px;
     line-height: 1;
