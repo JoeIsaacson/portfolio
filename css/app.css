@@ -694,7 +694,15 @@ video {
 }
 
 .crowdsurge-jumbotron--lead {
-    margin-bottom: 120px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 767px) {
+    .crowdsurge-jumbotron--lead {
+        margin-bottom: 120px;
+        padding: 0;
+    }
 }
 
 @media (max-width: 767px) {
