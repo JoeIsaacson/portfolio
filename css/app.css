@@ -10,20 +10,6 @@
     to { top: 0px; }
 }
 
-
-/* Fonts */
-
-@font-face {
-    font-family: 'Gotham Rounded Light';
-    src: url("../fonts/gotham-rounded-light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Gotham Rounded Medium';
-    src: url("../fonts/gotham-rounded-medium.otf") format("opentype");
-}
-
-
 /* BOOTSTRAP OVERRIDES */
 
 @media (min-width: 768px) {
@@ -48,8 +34,8 @@ body {
     padding-bottom: 0px;
     color: #666;
     font-family: 'Merriweather', serif;
-    font-size:  18px;
-    line-height: 2.2;
+    font-size:  17px;
+    line-height: 2.3;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
 }
@@ -73,14 +59,21 @@ h3 {
     font-weight: bold;
 }
 
+.lead {
+    line-height: 1.95;
+}
+
+
 @media (min-width: 767px) {
     .lead {
         font-size: 22px;
     }
 }
 
-.lead {
-    line-height: 1.95;
+@media (max-width: 766px) {
+    .lead {
+        font-size: 17px;
+    }
 }
 
 .lead.bold {
@@ -93,6 +86,8 @@ hr {
 
 .label {
     font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .label-default {
@@ -116,7 +111,7 @@ hr {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     background-color: transparent;
-    font-weight: 900;
+    font-weight: 700;
     color: inherit;
 }
 
@@ -127,6 +122,7 @@ hr {
 
 .navbar-default .navbar-brand {
     color: inherit;
+    font-weight: bold;
 }
 
 /*Components*/
@@ -402,7 +398,7 @@ video {
     }
 
     .navbar-default {
-        margin-bottom: 100px;
+        margin-bottom: 90px;
     }
 
     .sub-overview--name {
@@ -551,13 +547,28 @@ video {
 /* HEALTHYOUT */
 
 .healthyout-jumbotron {
-    background-color: #47C965;
     color: #FFF;
-    padding-top: 20px;
+    background: #47c965;
 }
 
-.healthyout-jumbotron .navbar-nav>li>a:hover {
-    color: #1B6215;
+@media (min-width: 767px) {
+    .healthyout-jumbotron {
+        background: -moz-radial-gradient(bottom, ellipse cover,  #3ead58 0%, #47c965 50%); /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 50%, color-stop(0%,#3ead58), color-stop(50%,#47c965)); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover,  #3ead58 0%,#47c965 50%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(bottom, ellipse cover,  #3ead58 0%,#47c965 50%); /* Opera 12+ */
+        background: -ms-radial-gradient(bottom, ellipse cover,  #3ead58 0%,#47c965 50%); /* IE10+ */
+        background: radial-gradient(ellipse at bottom,  #3ead58 0%,#47c965 50%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ead58', endColorstr='#47c965',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+}
+
+.healthyout-jumbotron .navbar-default .navbar-brand:hover,
+.healthyout-jumbotron .navbar-default .navbar-brand:focus,
+.healthyout-jumbotron .navbar-default .navbar-nav a:hover,
+.healthyout-jumbotron .navbar-default .navbar-nav a:hover,
+.healthyout-jumbotron .navbar-default .navbar-nav a:focus {
+    color: #EBF2EA;
 }
 
 
@@ -591,6 +602,12 @@ video {
 
 .healthyout-screens {
     background-color: #F5F5F5;
+}
+
+@media (max-width: 767px) {
+    .healthyout-screens{
+        margin-top: 30px;
+    }
 }
 
 .screenshot--header {
@@ -638,26 +655,41 @@ video {
 }
 
 
-/* CrowdSurge */
+/* work jumbotron */
 
-.crowdsurge-jumbotron {
+.work-jumbotron {
     padding-top: 20px;
     padding-bottom: 0;
-    background: #ededed; /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover,  #ededed 0%, #ffffff 50%); /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 50%, color-stop(0%,#ededed), color-stop(50%,#ffffff)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* IE10+ */
-    background: radial-gradient(ellipse at bottom,  #ededed 0%,#ffffff 50%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.crowdsurge-jumbotron--header {
-    padding-bottom: 30px;
+.work-jumbotron--header {
+    padding-bottom: 10px;
     font-size: 60px;
     line-height: 1;
 }
+
+.work-jumbotron--sub-header {
+    padding-bottom: 50px;
+}
+
+/* CrowdSurge */
+
+.crowdsurge-jumbotron {
+    background: #ededed; /* Old browsers */
+}
+
+@media (min-width: 767px) {
+    .crowdsurge-jumbotron {
+        background: -moz-radial-gradient(bottom, ellipse cover,  #ededed 0%, #ffffff 50%); /* FF3.6+ */
+        background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 50%, color-stop(0%,#ededed), color-stop(50%,#ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Opera 12+ */
+        background: -ms-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* IE10+ */
+        background: radial-gradient(ellipse at bottom,  #ededed 0%,#ffffff 50%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+}
+
 
 .video-embed-conatiner {
     margin: 10px 0;
@@ -689,17 +721,13 @@ video {
     margin-left: -100px;
 }
 
-.crowdsurge-jumbotron--sub-header {
-    padding-bottom: 60px;
-}
-
 .crowdsurge-jumbotron--lead {
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
 @media (min-width: 767px) {
-    .crowdsurge-jumbotron--lead {
+    .work-jumbotron--lead {
         margin-bottom: 120px;
         padding: 0;
     }
@@ -707,7 +735,7 @@ video {
 
 @media (max-width: 767px) {
 
-    .crowdsurge-jumbotron--header {
+    .work-jumbotron--header {
         padding-top: 40px;
         font-size: 40px;
     }

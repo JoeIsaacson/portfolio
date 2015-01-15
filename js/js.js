@@ -3,5 +3,5 @@ $(window).scroll(function() {
 
     console.log("length is " + scrollLength);
     $("#jumbotron--header").css({"margin-top": - (scrollLength * 2.0) + 'px'});
-    $("#kendrick--header").css({"margin-top": - (scrollLength * 1.0) + 'px'});
+    $("#header--img").css({"margin-top": - (scrollLength * 1.0) + 'px'});
 });
