@@ -63,6 +63,9 @@ h3 {
     line-height: 1.95;
 }
 
+.lead.bold {
+    font-weight: 500;
+}
 
 @media (min-width: 767px) {
     .lead {
@@ -76,8 +79,8 @@ h3 {
     }
 }
 
-.lead.bold {
-    font-weight: 500;
+.img-center {
+    margin: 0 auto;
 }
 
 hr {
@@ -187,23 +190,6 @@ small,
     }
 }
 
-.segmented-controls {
-    border: 2px solid #9B9B9B;
-    color: #9B9B9B;
-    border-radius: 4px;
-}
-
-.segmented-controls--control {
-    width: 50%;
-    float: left;
-    padding: 8px 10x;
-}
-
-.segmented-controls--control.active {
-    background-color: #9B9B9B;
-    color: #fff;
-}
-
 .footer {
     padding-top: 100px;
     padding-bottom: 60px;
@@ -241,8 +227,6 @@ video {
     margin-top: 40px;
 }
 
-/*Custom*/
-
 
 /*HEADER*/
 
@@ -251,12 +235,6 @@ video {
     background-color: #fff;
     z-index: 1;
     position: relative;
-}
-
-@media (min-width: 767px) {
-    .kendrick--header {
-        margin-bottom: 100px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -321,7 +299,6 @@ video {
         display: none;
     }
 }
-
 
 .main-overview--sub-title {
     line-height: 1.5;
@@ -532,16 +509,27 @@ video {
     border-bottom: 0;
 }
 
+/* work jumbotron */
 
-/* SUB OVERVIEW */
-
-.sub-nav {
+.work-jumbotron {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 }
 
-.sub-nav .segmented-controls {
-    margin-top: 20px;
+.work-jumbotron--header {
+    padding-bottom: 10px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+@media (min-width: 767px) {
+    .work-jumbotron--header {
+        margin-bottom: 100px;
+    }
+}
+
+.work-jumbotron--sub-header {
+    padding-bottom: 50px;
 }
 
 /* HEALTHYOUT */
@@ -654,24 +642,6 @@ video {
     position: relative;
 }
 
-
-/* work jumbotron */
-
-.work-jumbotron {
-    padding-top: 20px;
-    padding-bottom: 0;
-}
-
-.work-jumbotron--header {
-    padding-bottom: 10px;
-    font-size: 60px;
-    line-height: 1;
-}
-
-.work-jumbotron--sub-header {
-    padding-bottom: 50px;
-}
-
 /* CrowdSurge */
 
 .crowdsurge-jumbotron {
@@ -763,38 +733,4 @@ video {
     .crowdsurge-visual-design--image {
         padding: 30px;
     }
-}
-
-.iphone-family-container {
-    margin: 30px 0;
-}
-
-@media (min-width: 767px) and (max-width: 990px) {
-    .iphone-family-container {
-        margin-top: 80px;
-    }
-}
-
-.iphone-family {
-    position: relative;
-    z-index: 1;
-}
-
-.gif-container {
-    position: absolute;
-    background-color: red;
-    width: 30%;
-    height: 73.5%;
-    z-index: 0;
-    top: 11%;
-    left: 50%;
-    margin-left: -16%;
-}
-
-.gif-container img {
-    position: absolute;
-    width: 100%;
-    height: 102%;
-    left: 0;
-    top: -1px;
 }
