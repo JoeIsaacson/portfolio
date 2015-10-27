@@ -1,8 +1,8 @@
 /* Animations */
 
 @-webkit-keyframes iphoneMove {
-    from { bottom: -220px; }
-    to { bottom: -140px; }
+    from { bottom: -250px; }
+    to { bottom: -195px; }
 }
 
 @-webkit-keyframes jumbotronMove {
@@ -238,11 +238,11 @@ video {
 }
 
 @media (min-width: 768px) {
-    .work-overview__crowdsurge {
+    .work-overview__songkick {
         border-bottom: 4px solid #eee;
     }
 
-    .work-overview__crowdsurge .btn {
+    .work-overview__songkick .btn {
         margin-bottom: 33px;
     }
 }
@@ -272,7 +272,7 @@ video {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -140px;
+    bottom: -195px;
     right: -70px;
     -webkit-animation: iphoneMove 1s;
     -webkit-animation-timing-function: ease-in-out;
@@ -642,14 +642,14 @@ video {
     position: relative;
 }
 
-/* CrowdSurge */
+/* songkick */
 
-.crowdsurge-jumbotron {
+.songkick-jumbotron {
     background: #ededed; /* Old browsers */
 }
 
 @media (min-width: 767px) {
-    .crowdsurge-jumbotron {
+    .songkick-jumbotron {
         background: -moz-radial-gradient(bottom, ellipse cover,  #ededed 0%, #ffffff 50%); /* FF3.6+ */
         background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 50%, color-stop(0%,#ededed), color-stop(50%,#ffffff)); /* Chrome,Safari4+ */
         background: -webkit-radial-gradient(bottom, ellipse cover,  #ededed 0%,#ffffff 50%); /* Chrome10+,Safari5.1+ */
@@ -691,7 +691,7 @@ video {
     margin-left: -100px;
 }
 
-.crowdsurge-jumbotron--lead {
+.songkick-jumbotron--lead {
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -721,16 +721,16 @@ video {
     margin-top: 0;
 }
 
-.crowdsurge-visual-design {
+.songkick-visual-design {
     background-color: #F4F5F3;
 }
 
-.crowdsurge-visual-design hr {
+.songkick-visual-design hr {
     border-color: #6C6F72;
 }
 
 @media (max-width: 767px) {
-    .crowdsurge-visual-design--image {
+    .songkick-visual-design--image {
         padding: 30px;
     }
 }
