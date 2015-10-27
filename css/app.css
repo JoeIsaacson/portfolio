@@ -2,7 +2,7 @@
 
 @-webkit-keyframes iphoneMove {
     from { bottom: -250px; }
-    to { bottom: -195px; }
+    to { bottom: -204px; }
 }
 
 @-webkit-keyframes jumbotronMove {
@@ -27,6 +27,29 @@
 .col-centered {
     float: none;
     margin: 0 auto;
+}
+
+/* Loading Bar */
+
+.body:not(.pace-done) {
+    overflow: hidden;
+}
+
+.freeze-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.97;
+    z-index: 10;
+}
+
+.body:not(.pace-done) .freeze-screen {
+    overflow: hidden;
+    display: inline;
 }
 
 body {
@@ -272,11 +295,18 @@ video {
 
 .main-overview .iphone-mock-hand {
     position: absolute;
-    bottom: -195px;
+    animation-timing-function: ease-in-out;
     right: -70px;
+}
+
+.pace-active .main-overview .iphone-mock-hand  {
+    display: none;
+}
+
+.pace-done .main-overview .iphone-mock-hand {
     -webkit-animation: iphoneMove 1s;
     -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+    bottom: -204px;
 }
 
 @media (min-width: 1090px) {
@@ -369,9 +399,12 @@ video {
         right: 0;
         padding-top: 20px;
         z-index: 0;
+        animation-timing-function: ease-in-out;
+    }
+
+    .pace-done .jumbotron--container {
         -webkit-animation: jumbotronMove 1s;
         -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out;
     }
 
     .navbar-default {
@@ -403,9 +436,12 @@ video {
         left: 0;
         right: 0;
         z-index: 0;
+        animation-timing-function: ease-in-out;
+    }
+
+    .pace-done .jumbotron--container {
         -webkit-animation: jumbotronMove 1s;
         -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out;
     }
 
     .navbar-default {
@@ -524,7 +560,7 @@ video {
 
 @media (min-width: 767px) {
     .work-jumbotron--header {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
