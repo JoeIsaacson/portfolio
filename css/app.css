@@ -1,13 +1,20 @@
 /* Animations */
 
 @-webkit-keyframes iphoneMove {
-    from { bottom: -250px; }
-    to { bottom: -204px; }
+    from { bottom: -380px; }
+    to { bottom: -240px; }
 }
 
 @-webkit-keyframes jumbotronMove {
     from { top: -30px; }
     to { top: 0px; }
+}
+
+@media (min-width: 992px) {
+  @-webkit-keyframes iphoneMove {
+      from { bottom: -400px; }
+      to { bottom: -270px; }
+  }
 }
 
 /* BOOTSTRAP OVERRIDES */
@@ -328,7 +335,13 @@ video {
 .pace-done .main-overview .iphone-mock-hand {
     -webkit-animation: iphoneMove 1s;
     -webkit-animation-timing-function: ease-in-out;
-    bottom: -204px;
+    bottom: -240px;
+}
+
+@media (min-width: 992px) {
+      .pace-done .main-overview .iphone-mock-hand {
+          bottom: -270px;
+      }
 }
 
 @media (min-width: 1090px) {
