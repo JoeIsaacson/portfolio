@@ -1,34 +1,8 @@
-/* Animations */
-
-@-webkit-keyframes iphoneMove {
-    from { bottom: -380px; }
-    to { bottom: -240px; }
-}
-
-@-webkit-keyframes jumbotronMove {
-    from { top: -30px; }
-    to { top: 0px; }
-}
-
-@media (min-width: 992px) {
-  @-webkit-keyframes iphoneMove {
-      from { bottom: -400px; }
-      to { bottom: -270px; }
-  }
-}
 
 /* BOOTSTRAP OVERRIDES */
 
-@media (min-width: 768px) {
-    .container {
-        width: 700px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 920px;
-    }
+.container.container-no-width {
+  width: 100%;
 }
 
 .col-centered {
@@ -36,12 +10,26 @@
     margin: 0 auto;
 }
 
-/* Loading Bar */
+.jumbotron {
+    background-color: transparent;
+    border-radius: 0;
+    padding-top: 38px;
+}
 
+.jumbotron h1 {
+    margin-top: 0;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+/* General Design */
 
 body {
     padding-top: 0px;
     padding-bottom: 0px;
+    background-color: #eee;
     color: #666;
     font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -49,27 +37,48 @@ body {
     line-height: 2.3;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
+    background-color: #f3f3f3;
 }
 
-.body:not(.pace-done) {
-    overflow: hidden;
-}
-
-.freeze-screen {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+.work-body {
     background-color: #fff;
-    opacity: 0.97;
-    z-index: 10;
 }
 
-.body:not(.pace-done) .freeze-screen {
-    overflow: hidden;
-    display: inline;
+/* Main Page Layout */
+
+.scroll-section {
+    margin-top: 20px;
+}
+
+.envelope {
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+@media (min-width: 990px) {
+
+    .fix-section {
+        position: fixed;
+    }
+
+    .fix-container {
+        padding-top: 58px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .scroll-section {
+        margin-top: 30px;
+    }
+}
+
+.fix-container .sidebar--icon {
+    margin-right: 10px;
+}
+
+.fix-container hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -86,7 +95,7 @@ body a {
 h1,
 h2,
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     line-height: 1.4;
     font-weight: bold;
 }
@@ -120,7 +129,7 @@ p {
 }
 
 hr {
-    border-width: 5px;
+    border-width: 2px;
 }
 
 .label {
@@ -157,7 +166,6 @@ hr {
 .navbar-default .navbar-nav>li>a {
     color: inherit;
 }
-
 
 .navbar-default .navbar-brand {
     color: inherit;
@@ -221,26 +229,76 @@ small,
     padding-top: 0;
 }
 
-.section .overview-paragraph {
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-
 .section.image-section {
     padding-top: 45px;
     padding-bottom: 45px;
 }
 
 @media (max-width: 768px) {
-    .section .overview-paragraph {
-        padding-top: 30px;
-        padding-bottom: 30px;
+
+    .work-overview {
+        text-align: center;
     }
 
     .overview-img  {
         margin: 20px 0;
     }
 }
+
+@media (min-width: 769px) {
+
+    .work-overview .section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.work-overview__sortey.section {
+    background-color: #f1edf7;
+    color: #666;
+}
+
+.work-overview__songkick {
+    background-color: #f6f1f5;
+    position: relative;
+}
+
+.work-overview__healthyout {
+    background-color: #eaf4f3;
+}
+
+@keyframes float {
+    0% {top: 20%;}
+    50% {top: 23%;}
+    100% {top: 20%;}
+}
+
+.float-image {
+    position: absolute;
+    right: 18%;
+    top: 20%;
+    animation: float 4s ease-in-out infinite;
+}
+
+video {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.center-image {
+  margin: 0 auto;
+}
+
+.center-divide {
+    background-color: #f6f1f5;
+}
+
+.center-divide hr {
+  border-color: #ede0e6;
+}
+
+
+/* Footer */
 
 .footer {
     padding-top: 100px;
@@ -270,30 +328,10 @@ small,
     margin: 15px 0;
 }
 
-video {
-    border-radius: 6px;
-    overflow: hidden;
-}
+/* Header */
 
-.center-divide {
-    margin-top: 40px;
-}
-
-
-/*HEADER*/
-
-.work-overview,
-.about {
-    background-color: #fff;
-    z-index: 1;
-    position: relative;
-}
 
 @media (min-width: 768px) {
-    .work-overview__songkick {
-        border-bottom: 4px solid #eee;
-    }
-
     .work-overview__songkick .btn {
         margin-bottom: 33px;
     }
@@ -325,23 +363,6 @@ video {
 .main-overview .iphone-mock-hand {
     position: absolute;
     animation-timing-function: ease-in-out;
-    right: -70px;
-}
-
-.pace-active .main-overview .iphone-mock-hand  {
-    display: none;
-}
-
-.pace-done .main-overview .iphone-mock-hand {
-    -webkit-animation: iphoneMove 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    bottom: -240px;
-}
-
-@media (min-width: 992px) {
-      .pace-done .main-overview .iphone-mock-hand {
-          bottom: -270px;
-      }
 }
 
 @media (min-width: 1090px) {
@@ -367,9 +388,6 @@ video {
 
 .main-overview--sub-title {
     line-height: 1.5;
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 85px;
 }
 
 .main-overview--intro {
@@ -385,10 +403,6 @@ video {
 }
 
 @media (min-width: 990px) {
-    .main-overview--sub-title {
-        padding-bottom: 35px;
-    }
-
     .header--container h1 {
         font-size: 53px;
     }
@@ -411,37 +425,18 @@ video {
     background-color: #fff;
 }
 
-.jumbotron p {
-    font-size: inherit;
-}
-
-@media (min-width: 767px) {
+@media (min-width: 990px) {
 
     .jumbotron {
-        height: 474px;
+        height: 526px;
         z-index: 0;
         position: relative;
         margin: 0;
-        background-color: #F3F2F0;
     }
 
     .jumbotron--container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding-top: 20px;
-        z-index: 0;
+        position: relative;
         animation-timing-function: ease-in-out;
-    }
-
-    .pace-done .jumbotron--container {
-        -webkit-animation: jumbotronMove 1s;
-        -webkit-animation-timing-function: ease-in-out;
-    }
-
-    .navbar-default {
-        margin-bottom: 50px;
     }
 
     .sub-overview--name {
@@ -455,26 +450,9 @@ video {
     }
 }
 
-@media (min-width: 990px) {
+@media (max-width: 992px) {
     .jumbotron {
-        height: 526px;
-        z-index: 0;
-        position: relative;
-        margin: 0;
-    }
-
-    .jumbotron--container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 0;
-        animation-timing-function: ease-in-out;
-    }
-
-    .pace-done .jumbotron--container {
-        -webkit-animation: jumbotronMove 1s;
-        -webkit-animation-timing-function: ease-in-out;
+        padding: 20px 0 0;
     }
 }
 
@@ -484,13 +462,16 @@ video {
         padding: 0;
     }
 
-    .jumbotron {
-        padding: 0;
-        margin: 0;
+    .jumbotron p {
+      font-size: 17px;
     }
 
-    .main-overview--sub-title {
-        padding-bottom: 35px;
+    .scroll-section {
+      background-color: #fff;
+    }
+
+    .envelope {
+      padding: 0;
     }
 
     .section {
@@ -504,11 +485,6 @@ video {
 
     .section.section-bottom {
         padding-top: 0;
-    }
-
-    .container {
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     .header {
@@ -546,12 +522,8 @@ video {
         color: #F3F2F0;
     }
 
-    .main-overview--sub-title a {
-        color: #F3F2F0;
-    }
-
     .main-overview--sub-title {
-        padding-top: 25px;
+        padding-top: 5px;
     }
 }
 
@@ -722,10 +694,34 @@ video {
 /* Other */
 
 .body-content {
-    background-color: #fff;
     padding-bottom: 40px;
-    border-top: 1px solid #eee;
-    position: relative;
+}
+
+@media (min-width: 767px) {
+
+    .container .jumbotron {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .key-results-list li {
+      font-size: 25px;
+    }
+}
+
+/* sortey */
+
+.sortey-jumbotron {
+    background-color: #f1edf7;
+}
+
+.brand-shocker {
+    background-color: #7a62cf;
+}
+
+.float-gif {
+    padding: 3.2% 0;
+    background-color: #f1edf7;
 }
 
 /* songkick */
@@ -744,24 +740,6 @@ video {
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
 }
-
-@media (min-width: 767px) {
-    .songkick-jumbotron {
-        background: -moz-radial-gradient(bottom, ellipse cover,  #D6022C 0%, #f80046 50%); /* FF3.6+ */
-        background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 50%, color-stop(0%,#D6022C), color-stop(50%,#f80046)); /* Chrome,Safari4+ */
-        background: -webkit-radial-gradient(bottom, ellipse cover,  #D6022C 0%,#f80046 50%); /* Chrome10+,Safari5.1+ */
-        background: -o-radial-gradient(bottom, ellipse cover,  #D6022C 0%,#f80046 50%); /* Opera 12+ */
-        background: -ms-radial-gradient(bottom, ellipse cover,  #D6022C 0%,#f80046 50%); /* IE10+ */
-        background: radial-gradient(ellipse at bottom,  #D6022C 0%,#f80046 50%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D6022C', endColorstr='#f80046',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    }
-
-    .key-results-list li {
-      font-size: 25px;
-    }
-
-}
-
 
 .video-embed-conatiner {
     margin: 10px 0;
@@ -868,4 +846,21 @@ video {
     .songkick-visual-design--image {
         padding: 30px;
     }
+}
+
+/* code-less */
+
+.codeless-jumbotron {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.codeless-jumbotron .navbar-default .navbar-brand:hover,
+.codeless-jumbotron .navbar-default .navbar-brand:focus,
+.codeless-jumbotron .navbar-default .navbar-nav a:hover,
+.codeless-jumbotron .navbar-default .navbar-nav a:hover,
+.codeless-jumbotron .navbar-default .navbar-nav a:focus {
+    color: #f5f5f5;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
 }

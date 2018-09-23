@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sortey ©️🔎</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <!--Mailchimping around-->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <!--bootstrap - ya know - if ya need it -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style type="text/css">
+
+      /* TWBS 4 OVERRIDES */
+      /* ELEMENTS */
+
+      body {
+        color: #171738;
+      }
+
+      hr {
+        border-color: #b0a5c5;
+        border-width: 2px;
+
+      }
+
+      /* COMPONENTS */
+
+      .jumbotron {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+        background-color: transparent;
+        color: #5400FF;
+      }
+
+      .jumbotron .jumbotron-header {
+        font-weight: bold;
+      }
+
+      .jumbotron .jumbotron-lead {
+        font-weight: 200;
+        margin-top: 3%;
+        color: #171738;
+      }
+
+      .nav-pills .nav-item.show .nav-link,
+      .nav-pills .nav-link.active {
+        background-color: #5401ff;
+      }
+
+      a.nav-link {
+        color: #5401ff;
+      }
+
+      .display-3 {
+        font-size: 45px;
+        line-height: 60px;
+      }
+
+      .display-3 b {
+        background-color: #171738;
+      }
+
+      .marketing h4 {
+        text-decoration: underline;
+      }
+
+      /* COMPONENTS */
+
+      .header {
+        padding: 20px 0 10px 0;
+        font-weight: bold;
+        border-bottom: 2px solid #b0a5c5;
+      }
+
+      .nav-sub-title {
+        color: #b0a5c5;
+      }
+
+      .card {
+        background-color: #fff;
+        border: 0;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+
+      .application {
+        min-height: 280px;
+      }
+
+      @media (min-width: 992px) {
+        .application {
+          min-height: 400px;
+        }
+      }
+
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+      #mc_embed_signup {
+        clear: left;
+        font-size: 22px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        text-align: center !important;
+      }
+
+      .modal #mc_embed_signup {
+        margin-top: 0;
+        margin-bottom: 0
+      }
+
+      .modal #mc_embed_signup form {
+        padding: 0;
+      }
+
+      .modal #mc_embed_signup {
+        margin-top: 10px;
+      }
+
+      #mc_embed_signup form {
+        padding: 20px 0 0 0;
+        color: #b0a5c5;
+      }
+
+      #mc_embed_signup label {
+        text-align: center !important;
+        font-weight: normal;
+        padding-bottom: 0;
+      }
+
+      #mc_embed_signup input.email,
+      #mc_embed_signup input.button {
+        text-align: center !important;
+        width: 100%;
+        font-size: 16px;
+      }
+
+      #mc_embed_signup input.email {
+          text-align: center !important;
+          border: 2px solid #ddd;
+          padding: 11px 20px;
+      }
+
+      #mc_embed_signup input.button {
+        padding: 8px 20px;
+        height: auto;
+        background-color: #5400FF;
+      }
+
+      #mc_embed_signup .button:hover {
+        background-color: #4305c1;
+      }
+
+      @media (max-width: 576px) {
+        .jumbotron {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .jumbotron {
+          padding-top: 50px;
+        }
+
+        .marketing-demo {
+          border-radius: 4px;
+          padding-top: 20px;
+        }
+      }
+
+      .marketing-demo {
+        background-color: #fff;
+        padding: 40px 40px 20px 40px;
+        margin-bottom: 40px;
+        border: 1px solid #ddd;
+      }
+
+      .marketing-demo .header {
+        padding-top: 0;
+        border: 0;
+      }
+
+      .demo-nav {
+        padding: 10px 0;
+      }
+
+      .box-container {
+        width: 25px;
+      }
+
+      .box {
+        width: 10px;
+        height: 10px;
+        background-color: #5400FF;
+        margin: 1px;
+        float: right;
+      }
+
+      .two {
+        margin-left: -20%;
+        margin-top: 2%;
+        animation: 8s ease 1s infinite cardmove-two;
+      }
+
+      .three {
+        margin-left: -20%;
+        margin-top: 4%;
+        animation: 8s ease 1s infinite cardmove-three;
+      }
+
+      .four {
+        margin-left: -20%;
+        margin-top: 6%;
+        animation: 8s ease 1s infinite cardmove-four;
+      }
+
+      .float-card {
+        animation: float 6s ease-in-out infinite;
+        position: absolute;
+      }
+
+      .base-phone {
+        padding: 10% 20% 5%;
+      }
+
+      .float-card-1 {
+        top: 5%;
+        left: 0;
+      }
+
+      .float-card-2 {
+        top: 50%;
+        left: 0;
+      }
+
+      .float-card-3 {
+        top: 10%;
+        left: 50%;
+      }
+
+      @keyframes cardmove-two {
+        0% {margin-left: -20%; margin-top: 2%;}
+        15% {margin-left: 0; margin-top: 0;}
+        30% {margin-left: 0; margin-top: 0;}
+        45% {margin-left: -20%; margin-top: 2%;}
+        100% {margin-left: -20%; margin-top: 2%;}
+      }
+
+      @keyframes cardmove-three {
+        0% {margin-left: -20%; margin-top: 4%;}
+        15% {margin-left: 0; margin-top: 0;}
+        30% {margin-left: 0; margin-top: 0;}
+        45% {margin-left: -20%; margin-top: 4%;}
+        100% {margin-left: -20%; margin-top: 4%;}
+      }
+
+      @keyframes cardmove-four {
+        0% {margin-left: -20%; margin-top: 6%;}
+        15% {margin-left: 0; margin-top: 0;}
+        30% {margin-left: 0; margin-top: 0;}
+        45% {margin-left: -20%; margin-top: 6%;}
+        100% {margin-left: -20%; margin-top: 6%;}
+      }
+
+      @keyframes float {
+        0% {
+          transform: translatey(0px);
+        }
+
+        50% {
+          transform: translatey(-20px);
+        }
+
+        100% {
+          transform: translatey(0px);
+        }
+      }
+
+      .card {
+        color: #464a4c;
+      }
+
+      .card img {
+        width: 100%;
+      }
+
+      .card .text-box {
+        text-align: left;
+        color: #464a4c;
+        margin-top: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .text-box p {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .text-uppercase {
+        color: #7b7b7b;
+      }
+
+      .disclaimer {
+        font-size: 11px;
+      }
+
+    </style>
+    <!--bootstrap - JS-->
+    <!-- Need? [No] Yes
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      });
+    </script>
+    <!--Google analytics Tag-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-54275792-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!--Facebook Pixel-->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '500577246991746');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=500577246991746&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+      <!--DEMO-->
+      <div id="myInput" class="marketing-demo code d-none d-sm-block" data-toggle="modal" data-target="#exampleModal">
+          <div class="header clearfix">
+            <nav>
+              <div class="box-container float-right">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </nav>
+            <h3 class="nav-title">SORTEY</h3>
+            <h5 class="uppercase nav-sub-title">STOP LOSING STUFF YOU ALREADY FOUND</h5>
+            <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-things" aria-selected="true">Things</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-people" aria-selected="false">People</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-places-tab" data-toggle="pill" href="#pills-places" role="tab" aria-controls="pills-places" aria-selected="false">Places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-articles-tab" data-toggle="pill" href="#pills-articles" role="tab" aria-controls="pills-articles" aria-selected="false">Articles</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="application tab-content" id="pills-tabContent">
+              <!--Section 1-->
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-things-tab">
+                <div class="row">
+                  <div class="col-sm-3 one">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/1.jpg"></img>
+                      <div class="text-box">
+                        <p>484 Slim-fit pant in stretch brushed twill</p>
+                        <p>Cut in our slimmest fit, these pants come in a polished cotton twill with a bit of added flex. Ideal for the guy who rides a bike or walks a bunch, they are more comfortable thanks to that extra elasticity. 484: Sits below waist. Extra slim through hip and thigh, with our narrowest leg. Cotton/elast...</p>
+                        <p class="text-uppercase">JCrew.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 two start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/2.jpg"></img>
+                      <div class="text-box">
+                        <p>Ludlow bomber in brown tartan wool</p>
+                        <p>This is in our signature Ludlow Slim fit is made from 100 percent wool and features a classic tartan pattern we chose for its perfect seasonal feel. It's a guaranteed showstopper at any holiday party. Wool. Dry clean. Import. Select stores.</p>
+                        <p class="text-uppercase">JCrew.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 three start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/3.jpg"></img>
+                      <div class="text-box">
+                        <p>HM Bomber Jacket $29.99</p>
+                        <p>Khaki green. Nylon bomber jacket with a ribbed stand-up collar, zip at front, and ribbing at cuffs and hem. Side pockets with flap and concealed snap.</p>
+                        <p class="text-uppercase">HM.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 four start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/4.jpg"></img>
+                      <div class="text-box">
+                        <p>Laurel Sunglasses in Tea Rose Fade | Warby Parker</p>
+                        <p>Laurel's round lenses with just a hint of cat-eye provide a beautiful, easy-to-wear look for medium-sized faces.</p>
+                        <p class="text-uppercase">warbyparker.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Section 2-->
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-people-tab">
+                <div class="row">
+                  <div class="col-sm-3 one">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/5.jpg"></img><div class="text-box">
+                        <p>30 Under 30 - Media - Forbes</p>
+                        <p>Today's disruptors and tomorrow's brightest stars in media</p>
+                        <p class="text-uppercase">Forbes.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 two start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/6.jpg"></img>
+                      <div class="text-box">
+                        <p>Sarh Miller</p>
+                        <p>See this user's full profile</p>
+                        <p class="text-uppercase">linkedin.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 three start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/7.jpg"></img>
+                      <div class="text-box">
+                        <p>Deborah Short</p>
+                        <p>Snapchat's bold new straregy boils down to these things.</p>
+                        <p class="text-uppercase">VentureBeat.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 four start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/8.jpg"></img>
+                      <div class="text-box">
+                        <p>Hunter Benedict</p>
+                        <p>Is this the face of a new Fantasy Football King? Probably not.</p>
+                        <p class="text-uppercase">Bloomberg.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Section 3-->
+              <div class="tab-pane fade" id="pills-places" role="tabpanel" aria-labelledby="pills-places-tab">
+                <div class="row">
+                  <div class="col-sm-3 one">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/9.jpg"></img>
+                      <div class="text-box">
+                        <p>Nice, France</p>
+                        <p>Old Town (Vieille Ville), Promenade des Anglais, Castle Hill. Been here too? Add it to your map!</p>
+                        <p class="text-uppercase">tripadvisor.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 two start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/10.jpg"></img>
+                      <div class="text-box">
+                        <p>Undercover Portland</p>
+                        <p>Places even most locals don't know about, from out-of-the-way farmers markets to the best waterfront brunch spot you never heard of.</p>
+                        <p class="text-uppercase">spot.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 three start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/11.jpg"></img>
+                      <div class="text-box">
+                        <p>Shànghǎi travel - Lonely Planet</p>
+                        <p>Explore Shànghǎi holidays and discover the best time and places to visit. | Shànghǎi: few cities in the world evoke so much history, excess, glamour, mystique and exotic promise in name alone.</p>
+                        <p class="text-uppercase">LonelyPlanet.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 four start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/12.jpg"></img>
+                      <div class="text-box">
+                        <p>36 Hours in Barcelona, Spain</p>
+                        <p>In the Catalan capital, tuna belly is painted with jamón fat, new galleries surface in the shadow of Gaudí and children play around the Magic Fountain.</p>
+                        <p class="text-uppercase">NewYorkTimes.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Section 4-->
+              <div class="tab-pane fade" id="pills-articles" role="tabpanel" aria-labelledby="pills-articles-tab">
+                <div class="row">
+                  <div class="col-sm-3 one">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/13.jpg"></img>
+                      <div class="text-box">
+                        <p>Trump and Putin: What Comes Next?</p>
+                        <p>Will a future, formal Trump-Putin summit be a game changer?</p>
+                        <p class="text-uppercase">nationalinterest.org</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 two start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/14.jpg"></img>
+                      <div class="text-box">
+                        <p>Trump asked for Xi's help in UCLA players' shoplifting case: official</p>
+                        <p>U.S. President Donald Trump sought the help of Chinese President Xi Jinping in the case of three UCLA basketball players detained in China on suspicion of shoplifting last week, said a senior White House official.</p>
+                        <p class="text-uppercase">Reuters.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 three start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/15.jpg"></img>
+                      <div class="text-box">
+                        <p>In Lieu of Thanking Me For My Service – Johnny V. Boykins</p>
+                        <p>I am celebrating my 12th Veteran’s Day as a veteran of the United States Coast Guard. Every year, I spend some time correcting people on…</p>
+                        <p class="text-uppercase">medium.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 four start">
+                    <div class="card">
+                      <img class="img-responsive" src="img/sortey/demo-imgs/16.jpg"></img>
+                      <div class="text-box">
+                        <p>Beware of Workplace Policies That Kill Motivation</p>
+                        <p>Research explains why and how brevity often beats specificity in employee contracts.</p>
+                        <p class="text-uppercase">gsb.stanford.edu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+  </body>
+</html>
